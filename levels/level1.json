@@ -1,0 +1,33 @@
+{
+  "id": "level1",
+  "distrito": "Callao",
+  "clase": "Clase 01",
+  "titulo": "El puerto del azar",
+  "tema": "puerto",
+  "musica": "puerto",
+  "vehiculo": "mototaxi",
+  "intro": "En el muelle todo se decide lanzando un dado. Los bichos confunden el espacio muestral con los eventos y suman cuando deberían multiplicar. Ordena el caos contando bien los casos.",
+  "repaso": [
+    "P(A) = casos favorables / casos totales, siempre en decimales.",
+    "Espacio muestral (Ω) es todo lo posible; un evento es un subconjunto suyo.",
+    "Palabra «O» → se suma (adición). Palabra «Y» → se multiplica (multiplicación).",
+    "Con reemplazo se multiplican fracciones consecutivas; sin reemplazo con orden son permutaciones."
+  ],
+  "mapa": [
+    "                                                                                                                                                                      ",
+    "                                                                                                                                                                      ",
+    "                                                                                                                                                                      ",
+    "                                                                                                                                                                      ",
+    "                                                                                                                                                                      ",
+    "                                                                                                                                                                      ",
+    "                                                                                                                                                                      ",
+    "                                                                                                  o o o o                                           #                 ",
+    "                 o    ?           o     o o o o           1          o            V      o        ====                   G   oL       o o o o      ##                 ",
+    "                o o              o o    ====                        o o   #             o o                                 o o       ====        ###                 ",
+    "      o o o o  o   o          o o o o                            o o o o ##         o ooo  o ===                           o   o             o o ####                 ",
+    "  P                        E                   E  X   C       E         ###   E                         E   C   X    E            E       B     #####   M             ",
+    "################  ###############   ################################  ##################   #################################  ########################################",
+    "################  ###############   ################################  ##################   #################################  ########################################",
+    "################  ###############   ################################  ##################   #################################  ########################################"
+  ]
+}

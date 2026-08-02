@@ -1,0 +1,33 @@
+{
+  "id": "level2",
+  "distrito": "San Miguel",
+  "clase": "Clase 02",
+  "titulo": "El malecón de las combinatorias",
+  "tema": "parque",
+  "musica": "parque",
+  "vehiculo": "bus",
+  "intro": "Ahora toca calcular de verdad. En el malecón los bichos usan permutaciones donde van combinatorias y se olvidan del complemento. Aplica la recetita: primero los casos totales, después los favorables.",
+  "repaso": [
+    "Sin reemplazo y SIN orden → combinatorias. Sin reemplazo y CON orden → permutaciones.",
+    "Si el enunciado no aclara el orden, se asume SIN orden.",
+    "Primero los casos totales (denominador) y recién después los favorables.",
+    "«Al menos uno» sale más rápido por complemento: 1 − P(ninguno)."
+  ],
+  "mapa": [
+    "                                                                                                                                                                            ",
+    "                                                                                                                                                                            ",
+    "                                                                                                                                                                            ",
+    "                                                                                                                                                                            ",
+    "                                                                                                                                                                            ",
+    "                                                                                                                                                                            ",
+    "                                                                                                                                                                            ",
+    "                                                                              o o o                                                                       #                 ",
+    "          ?    o   o o o         o       o o o o   1          #      o        ===           o   V           o o L o     o         G                      ##                 ",
+    "              o o  ===          o o      ====                ##     o o                    o o              ====       o o              #               ###                 ",
+    "      o o o  o   o             o   o                        ### o ooo  o ===              o   o                       o   o            ##  o o o o     ####                 ",
+    "  P                      E   X       E         C       E   ####                      E  X          E    C          E          E       ###       B     #####   M             ",
+    "##############   ###############   #################################   ####################  ##########################   ##################################################",
+    "##############   ###############   #################################   ####################  ##########################   ##################################################",
+    "##############   ###############   #################################   ####################  ##########################   ##################################################"
+  ]
+}
