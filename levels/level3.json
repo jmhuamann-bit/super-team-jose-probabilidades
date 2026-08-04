@@ -1,0 +1,33 @@
+{
+  "id": "level3",
+  "distrito": "Pueblo Libre",
+  "clase": "Clase 03",
+  "titulo": "La plaza de las variables aleatorias",
+  "tema": "plaza",
+  "musica": "parque",
+  "vehiculo": "taxi",
+  "intro": "En la plaza cada quien tira su dado y anota lo que sale. Toca ordenar esos resultados en una función de probabilidad y sacarle el valor esperado y la varianza sin que las constantes te confundan.",
+  "repaso": [
+    "Lo que se cuenta es discreto; lo que se mide (tiempo, peso, talla) es continuo.",
+    "En f(x) cada valor va entre 0 y 1 y todos juntos suman exactamente 1.",
+    "VAR(X) = E(x²) − μx². La acumulada F(x) nunca decrece.",
+    "Si w = ax + b: E(w) = a·E(x) + b, pero VAR(w) = a²·VAR(x) (el «+ b» no afecta)."
+  ],
+  "mapa": [
+    "                                                                                                                                                                        ",
+    "                                                                                                                                                                        ",
+    "                                                                                                                                                                        ",
+    "                                                                                                                                                                        ",
+    "                                                                                                                                                                        ",
+    "                                                                                                                                                                        ",
+    "                                                                                                                                                                        ",
+    "                                                                            o o o o                                                                          #          ",
+    "            ?    o   o o o o    o       1                          o        ====       V    o                 o o o o    G    o        L                    ##          ",
+    "                o o  ====      o o                    #           o o                      o o                ====           o o             #             ###          ",
+    "      o o o o  o   o          o   o                  ##       o ooo  o ===                o   o                             o   o           ##  o o o     ####          ",
+    "  P                        E        E       X   C   ###   E                        E             E    C   X          E             E       ###      B    #####   M      ",
+    "################  #############   ################################   ######################  ################################   ########################################",
+    "################  #############   ################################   ######################  ################################   ########################################",
+    "################  #############   ################################   ######################  ################################   ########################################"
+  ]
+}

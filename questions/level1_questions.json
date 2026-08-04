@@ -9,19 +9,24 @@
       "nivel": "reconocimiento",
       "enunciado": "Definición clásica: ¿cómo se calcula una probabilidad?",
       "opciones": [
-        "Casos totales ÷ casos favorables",
         "Casos favorables ÷ casos totales",
+        "Casos totales ÷ casos favorables",
         "Casos favorables × casos totales",
         "Casos favorables − casos totales"
       ],
-      "correcta": 1,
+      "correcta": 0,
       "explicacion": "P(A) = casos favorables / casos totales. Consejo del curso: primero halla TODOS los casos posibles. Y ojo, en estadística la probabilidad se escribe en decimales, nunca en %."
     },
     {
       "id": "p1-q2",
       "nivel": "reconocimiento",
       "enunciado": "Lanzas un dado al aire.\n\n¿Cuál es la probabilidad de que salga un número PAR?",
-      "opciones": ["0,25", "0,5", "0,3", "1/3"],
+      "opciones": [
+        "0,25",
+        "0,5",
+        "0,3",
+        "1/3"
+      ],
       "correcta": 1,
       "explicacion": "Casos favorables: 2, 4 y 6 → son 3. Casos totales: 6. Entonces 3/6 = 0,5."
     },
@@ -31,11 +36,11 @@
       "enunciado": "ESPACIO MUESTRAL (Ω) vs EVENTO.\n\n¿Cuál es la diferencia?",
       "opciones": [
         "El espacio muestral es un subconjunto del evento",
-        "El espacio muestral es el conjunto de TODOS los resultados posibles; el evento es un subconjunto suyo",
         "Son lo mismo escrito de dos formas",
+        "El espacio muestral es el conjunto de TODOS los resultados posibles; el evento es un subconjunto suyo",
         "El evento siempre tiene un solo elemento"
       ],
-      "correcta": 1,
+      "correcta": 2,
       "explicacion": "Ω es todo lo que puede pasar. Un evento (A, B, C…) es una parte de ese conjunto: puede ser vacío o llegar a ser todo el espacio muestral."
     },
     {
@@ -44,42 +49,62 @@
       "enunciado": "Dos eventos son MUTUAMENTE EXCLUYENTES cuando…",
       "opciones": [
         "Su unión da el espacio muestral",
-        "No tienen ningún elemento en común",
+        "Uno es el complemento del otro",
         "Tienen la misma cantidad de elementos",
-        "Uno es el complemento del otro"
+        "No tienen ningún elemento en común"
       ],
-      "correcta": 1,
+      "correcta": 3,
       "explicacion": "Excluyentes = no comparten nada. Si además su unión da todo Ω son EXHAUSTIVOS, y si cumplen las dos cosas a la vez (y son solo dos) son COMPLEMENTARIOS."
     },
     {
       "id": "p1-q5",
       "nivel": "comprension",
       "enunciado": "En un experimento, el evento X > 10.\n\n¿Cuál es su complemento?",
-      "opciones": ["X < 10", "X ≤ 10", "X ≥ 10", "X > 11"],
-      "correcta": 1,
+      "opciones": [
+        "X < 10",
+        "X ≥ 10",
+        "X ≤ 10",
+        "X > 11"
+      ],
+      "correcta": 2,
       "explicacion": "El complemento tiene que cubrir todo lo que queda, sin dejar huecos ni repetir: si uno es «mayor que 10», el otro es «menor o igual que 10». Cuidado con dejar fuera el 10."
     },
     {
       "id": "p1-q6",
       "nivel": "comprension",
       "enunciado": "María tiene 4 polos, 3 pantalones y 2 pares de zapatillas.\n\n¿Cuántos outfits distintos puede formar eligiendo 1 polo, 1 pantalón Y 1 par de zapatillas?",
-      "opciones": ["9", "24", "12", "20"],
-      "correcta": 1,
+      "opciones": [
+        "24",
+        "9",
+        "12",
+        "20"
+      ],
+      "correcta": 0,
       "explicacion": "Palabra clave «Y» → principio de MULTIPLICACIÓN: 4 × 3 × 2 = 24. Si fuera «O» (elegir una sola prenda) se sumaría: 4 + 3 + 2 = 9."
     },
     {
       "id": "p1-q7",
       "nivel": "comprension",
       "enunciado": "Una persona tiene 3 camisetas y 2 pantalones. Elige UNA sola prenda al azar (puede ser camiseta o pantalón).\n\n¿Cuál es la probabilidad de que sea camiseta?",
-      "opciones": ["0,5", "0,6", "0,3", "3/2"],
-      "correcta": 1,
+      "opciones": [
+        "0,5",
+        "3/2",
+        "0,3",
+        "0,6"
+      ],
+      "correcta": 3,
       "explicacion": "Como es «o», se suman las opciones: 3 + 2 = 5 prendas en total. Favorables: 3 camisetas. P = 3/5 = 0,6."
     },
     {
       "id": "p1-q8",
       "nivel": "aplicacion",
       "enunciado": "MUESTREO CON REPOSICIÓN (con orden). Hay 10 estudiantes y se seleccionan 2, devolviendo el nombre a la bolsa cada vez.\n\n¿Cuántos casos posibles hay?",
-      "opciones": ["20", "100", "90", "45"],
+      "opciones": [
+        "20",
+        "100",
+        "90",
+        "45"
+      ],
       "correcta": 1,
       "explicacion": "Con reemplazo se multiplica el mismo número: Nⁿ = 10² = 100. Si fuera SIN reemplazo y con orden serían 10 × 9 = 90."
     },
@@ -87,16 +112,26 @@
       "id": "p1-q9",
       "nivel": "aplicacion",
       "enunciado": "Una caja tiene 7 productos buenos y 3 defectuosos. Se sacan 2 CON REEMPLAZO.\n\n¿Cuál es la probabilidad de que ambos sean buenos?",
-      "opciones": ["0,49", "0,467", "0,7", "0,14"],
-      "correcta": 0,
+      "opciones": [
+        "0,7",
+        "0,467",
+        "0,49",
+        "0,14"
+      ],
+      "correcta": 2,
       "explicacion": "Con reemplazo se usan fracciones consecutivas y la caja no cambia: (7/10) × (7/10) = 0,49. Si fuera SIN reemplazo daría (7/10)(6/9) = 0,467."
     },
     {
       "id": "p1-q10",
       "nivel": "aplicacion",
       "enunciado": "MUESTREO SIN REEMPLAZO CON ORDEN. En una empresa hay 8 empleados que se postulan a director, subdirector y secretario (cargos distintos).\n\n¿De cuántas maneras se pueden asignar los 3 puestos?",
-      "opciones": ["56", "336", "512", "24"],
-      "correcta": 1,
+      "opciones": [
+        "56",
+        "24",
+        "512",
+        "336"
+      ],
+      "correcta": 3,
       "explicacion": "Como el orden importa son permutaciones: P₃⁸ = 8 × 7 × 6 = 336. Si los 3 tuvieran el MISMO rol, sería la combinatoria C₃⁸ = 56."
     }
   ]

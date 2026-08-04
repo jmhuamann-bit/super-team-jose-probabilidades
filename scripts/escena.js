@@ -162,6 +162,8 @@ const FICHAS = [
   { sprite: "pulpo", nombre: "El Pulpo Sumador", texto: "Jefe del puerto: suma cuando hay que multiplicar." },
   { sprite: "paloma", nombre: "Paloma Permutadora", texto: "Ordena grupos donde el orden no importa." },
   { sprite: "combi", nombre: "La Combi Combinatoria", texto: "Jefa del malecón: se olvida del complemento." },
+  { sprite: "cuy", nombre: "Cuy Esperado", texto: "Confunde el promedio con la varianza." },
+  { sprite: "torito", nombre: "El Torito de la Varianza", texto: "Jefe de la plaza: se olvida de elevar la constante al cuadrado." },
 ];
 
 export function galeriaPersonajes(contenedor) {

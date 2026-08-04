@@ -1,0 +1,138 @@
+{
+  "nivel": "level3",
+  "clase": "Clase 03 · Variable aleatoria unidimensional",
+  "fuente": "Apuntes de la 3era clase — Estadística 2",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "v3-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "¿Qué tipo de variable es «el tiempo que demora un pescador en atrapar un pez»?",
+      "opciones": [
+        "Discreta: se puede contar",
+        "No es una variable",
+        "Continua: asume un número incontable de valores (se mide, no se cuenta)",
+        "Depende del pescador"
+      ],
+      "correcta": 2,
+      "explicacion": "Continua. Todo lo que se MIDE (tiempo, peso, talla) es continuo; lo que se CUENTA (número de peces, número de amigos) es discreto."
+    },
+    {
+      "id": "v3-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "¿Qué condiciones debe cumplir una función de probabilidad f(x)?",
+      "opciones": [
+        "Cada f(x) debe estar entre 0 y 1, y la suma de todas debe dar 1",
+        "Cada f(x) debe estar entre 0 y 100",
+        "La suma de todas debe dar 100",
+        "Cada f(x) debe ser distinta de las demás"
+      ],
+      "correcta": 0,
+      "explicacion": "Entre 0 y 1 cada una, y todas juntas suman exactamente 1. Si te falta un valor en la tabla, sale de ahí."
+    },
+    {
+      "id": "v3-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "DATO CURIOSO. Las variables aleatorias usan medidas POBLACIONALES.\n\n¿Cuál es la notación correcta del valor esperado?",
+      "opciones": [
+        "E(X) = X̄ (media muestral)",
+        "E(X) = s²",
+        "E(X) = n",
+        "E(X) = μx (media poblacional)"
+      ],
+      "correcta": 3,
+      "explicacion": "Una variable aleatoria describe TODA la población de valores posibles según su distribución, por eso se usa μx y no la media muestral."
+    },
+    {
+      "id": "v3-q4",
+      "nivel": "comprension",
+      "enunciado": "Tabla de una función de probabilidad:\n\nx:    0     1     2     3     4     5\nf(x): 0,10  0,05  0,20   ¿?   0,30  0,20\n\n¿Cuál es el valor que falta?",
+      "opciones": [
+        "0,10",
+        "0,15",
+        "0,25",
+        "0,05"
+      ],
+      "correcta": 1,
+      "explicacion": "La suma tiene que dar 1: 0,10 + 0,05 + 0,20 + 0,30 + 0,20 = 0,85. Entonces falta 1 − 0,85 = 0,15."
+    },
+    {
+      "id": "v3-q5",
+      "nivel": "comprension",
+      "enunciado": "SORTEO CON REEMPLAZO. Hay 2 personas y se sortean 2 premios devolviendo el nombre a la bolsa.\n\nSi X = número de veces que Bruno gana, ¿cuánto vale f(1) = P(X = 1)?",
+      "opciones": [
+        "0,25",
+        "1",
+        "0,75",
+        "0,5"
+      ],
+      "correcta": 3,
+      "explicacion": "Hay 4 casos posibles (2 × 2). Bruno gana exactamente una vez en 2 de ellos, así que f(1) = 2/4 = 0,5. Además f(0) = f(2) = 0,25 y las tres suman 1."
+    },
+    {
+      "id": "v3-q6",
+      "nivel": "comprension",
+      "enunciado": "DATO DE ORO sobre la función de probabilidad ACUMULADA F(x).\n\n¿Cómo es siempre?",
+      "opciones": [
+        "Continua por tramos y NO decreciente (crece o se mantiene)",
+        "Siempre decreciente",
+        "Una recta perfecta",
+        "Puede subir y bajar libremente"
+      ],
+      "correcta": 0,
+      "explicacion": "Como va acumulando probabilidades, nunca puede bajar: crece por escalones o se queda igual, y termina en 1."
+    },
+    {
+      "id": "v3-q7",
+      "nivel": "comprension",
+      "enunciado": "A todos los datos de una variable se les SUMA una constante de 10.\n\n¿Qué pasa con el promedio y con la varianza?",
+      "opciones": [
+        "Los dos aumentan en 10",
+        "Los dos se quedan igual",
+        "El promedio aumenta en 10; la varianza NO cambia",
+        "El promedio no cambia; la varianza aumenta en 10"
+      ],
+      "correcta": 2,
+      "explicacion": "Sumar corre todos los datos al mismo lado: el promedio se mueve, pero la dispersión entre ellos es la misma. Las medidas de variabilidad absoluta no cambian con + k."
+    },
+    {
+      "id": "v3-q8",
+      "nivel": "aplicacion",
+      "enunciado": "Función de probabilidad:\n\nx:    1     2     3     4     5\nf(x): 0,05  0,10  0,70  0,10   ¿?\n\n¿Cuál es el valor esperado E(X)?",
+      "opciones": [
+        "2,50",
+        "3,00",
+        "3,50",
+        "2,80"
+      ],
+      "correcta": 1,
+      "explicacion": "Primero el faltante: 1 − 0,95 = 0,05. Luego E(X) = 1(0,05) + 2(0,10) + 3(0,70) + 4(0,10) + 5(0,05) = 3,00."
+    },
+    {
+      "id": "v3-q9",
+      "nivel": "aplicacion",
+      "enunciado": "Misma tabla (E(X) = 3).\n\n¿Cuál es la VARIANZA?",
+      "opciones": [
+        "9,60",
+        "3,00",
+        "0,60",
+        "1,20"
+      ],
+      "correcta": 2,
+      "explicacion": "VAR = E(x²) − μx². E(x²) = 1(0,05) + 4(0,10) + 9(0,70) + 16(0,10) + 25(0,05) = 9,60. Entonces 9,60 − 3² = 0,60."
+    },
+    {
+      "id": "v3-q10",
+      "nivel": "aplicacion",
+      "enunciado": "Misma variable (E(X) = 3 y VAR(X) = 0,60). Ahora a cada dato se le multiplica por 5 y se le suma 10, o sea w = 5x + 10.\n\n¿Cuál es el nuevo valor esperado y la nueva varianza?",
+      "opciones": [
+        "E(w) = 25 · VAR(w) = 15",
+        "E(w) = 25 · VAR(w) = 3",
+        "E(w) = 15 · VAR(w) = 15",
+        "E(w) = 25 · VAR(w) = 0,60"
+      ],
+      "correcta": 0,
+      "explicacion": "E(w) = 5(3) + 10 = 25. La varianza ignora el «+10» y se multiplica por la constante AL CUADRADO: VAR(w) = 5² × 0,60 = 15."
+    }
+  ]
+}
