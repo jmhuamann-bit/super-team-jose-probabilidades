@@ -1,0 +1,138 @@
+{
+  "nivel": "level4",
+  "clase": "Clase 04 · Variable aleatoria continua (Parte 01)",
+  "fuente": "Apuntes de la 4ta clase — Estadística 2 (hasta la función acumulativa)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "c4-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "SALIMOS A PESCAR.\n\n¿Cuál de estas variables aleatorias es CONTINUA?",
+      "opciones": [
+        "El número de peces capturados por un pescador",
+        "La longitud del pez",
+        "El número de amigos con los que vas a pescar",
+        "La cantidad de cañas que llevas"
+      ],
+      "correcta": 1,
+      "explicacion": "La discreta asume un número CONTABLE de valores (se cuenta: 1, 2, 3 peces). La continua asume un número INCONTABLE: la longitud del pez puede ser 32,4718… cm. Regla práctica: si lo cuentas es discreta, si lo mides es continua."
+    },
+    {
+      "id": "c4-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "CARACTERÍSTICA DE LA FUNCIÓN DE DENSIDAD.\n\n¿Cuánto vale toda el área bajo la curva?",
+      "opciones": [
+        "Depende de cada función",
+        "Vale 0, porque son puntos",
+        "Vale el número más alto de la curva",
+        "Vale 1 (o sea, el 100 %)"
+      ],
+      "correcta": 3,
+      "explicacion": "El área total bajo la curva siempre es 1, porque agrupa todos los casos posibles: el 100 %. Justo de esa condición se despeja el valor de K cuando te piden crear una función de densidad."
+    },
+    {
+      "id": "c4-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "LA RECETITA DE LA INTEGRAL DEFINIDA.\n\n¿Cómo se integra una potencia como x²?",
+      "opciones": [
+        "Se le suma 1 al exponente, ese nuevo número se pone de divisor y luego se reemplazan los límites (superior − inferior)",
+        "Se le resta 1 al exponente y se multiplica por él",
+        "Se multiplica el exponente por la variable",
+        "Se reemplaza directamente el límite superior"
+      ],
+      "correcta": 0,
+      "explicacion": "x² pasa a x³/3, y recién ahí reemplazas: primero el límite superior, después el inferior, y restas. Dos propiedades que ayudan: una integral se puede separar en dos partes, y las constantes pueden salir afuera."
+    },
+    {
+      "id": "c4-q4",
+      "nivel": "comprension",
+      "enunciado": "Se escoge un estudiante al azar y su talla es una variable aleatoria CONTINUA.\n\n¿Cuál es la probabilidad de que mida exactamente 1,72234 metros?",
+      "opciones": [
+        "Depende de cuántos estudiantes haya",
+        "Es el valor que tome la función de densidad en ese punto",
+        "Es CERO: en una continua la probabilidad puntual siempre es 0",
+        "Es 1 dividido entre el total de tallas posibles"
+      ],
+      "correcta": 2,
+      "explicacion": "Como hay infinitos valores posibles, la probabilidad de caer en un punto exacto es 0. Ojo con la trampa del cuaderno: en f(x) = x², f(1) = 1, pero eso NO es una probabilidad; P(X = 1) sigue siendo 0. La densidad solo dibuja cómo se distribuye la información: las probabilidades se sacan del área de un INTERVALO."
+    },
+    {
+      "id": "c4-q5",
+      "nivel": "comprension",
+      "enunciado": "Te dan f(x) = K·x² para 1 ≤ x ≤ 2 (y 0 en el resto).\n\n¿Qué valor debe tener K para que sea una función de densidad?",
+      "opciones": [
+        "K = 3/7",
+        "K = 7/3",
+        "K = 1/3",
+        "K = 3"
+      ],
+      "correcta": 0,
+      "explicacion": "Se plantea que el área valga 1: ∫ de 1 a 2 de K·x² dx = 1 → K·(x³/3) evaluado de 1 a 2 → K·(8/3 − 1/3) = K·(7/3) = 1 → K = 3/7. Fíjate que las zonas de afuera aportan 0, así que solo integras el tramo donde la función existe."
+    },
+    {
+      "id": "c4-q6",
+      "nivel": "comprension",
+      "enunciado": "FUNCIÓN ACUMULADA. En la recetita, el límite superior de la integral es X y no un número.\n\n¿Por qué?",
+      "opciones": [
+        "Porque así la integral es más fácil de resolver",
+        "Porque el número siempre da cero",
+        "Porque X es el valor máximo de la zona",
+        "Porque quieres una FUNCIÓN que entregue cuánto se acumula hasta cualquier punto, no un solo valor"
+      ],
+      "correcta": 3,
+      "explicacion": "Si pones un número, calculas cuánto se acumuló hasta ese punto y ya. Al dejar la X arriba te queda una función que, para el valor que le metas, te devuelve lo acumulado. Por eso la acumulada sirve después para calcular probabilidades de frente."
+    },
+    {
+      "id": "c4-q7",
+      "nivel": "aplicacion",
+      "enunciado": "Te dan f(x) = K·(3x + 1)/2 para 0 ≤ x ≤ 4 (y 0 en el resto).\n\n¿Cuál es el valor de K?",
+      "opciones": [
+        "K = 1/28",
+        "K = 1/14",
+        "K = 14",
+        "K = 1/4"
+      ],
+      "correcta": 1,
+      "explicacion": "La constante sale afuera: (K/2)·∫ de 0 a 4 de (3x + 1) dx = 1. Integrando: (K/2)·(3x²/2 + x) de 0 a 4 = (K/2)·(24 + 4) = (K/2)·28 = 14K. Entonces 14K = 1 y K = 1/14."
+    },
+    {
+      "id": "c4-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3 — Una densidad triangular vale f(x) = x/4 en la zona 0 ≤ x < 2.\n\nSabiendo que antes de 0 no se acumuló nada, ¿cuál es la función ACUMULADA en esa zona?",
+      "opciones": [
+        "F(x) = x/4",
+        "F(x) = x²/4",
+        "F(x) = x²/8",
+        "F(x) = 1/2"
+      ],
+      "correcta": 2,
+      "explicacion": "F(x) = F(zona anterior) + ∫ de 0 a X de (x/4) dx = 0 + (1/4)·(x²/2) evaluado de 0 a X = x²/8. Comprobación rápida: en el borde x = 2 da 4/8 = 1/2, o sea que hasta la mitad del triángulo se acumuló la mitad del área."
+    },
+    {
+      "id": "c4-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3 — Terminas de armar una función acumulada por tramos.\n\n¿Qué debe darte el ÚLTIMO tramo, y qué significa si no te da eso?",
+      "opciones": [
+        "Debe dar 1: ahí ya se acumuló toda el área. Si no da 1, algo salió mal en el camino",
+        "Debe dar 0, porque después ya no hay curva",
+        "Debe dar el mismo valor que la densidad en ese punto",
+        "Puede dar cualquier número mientras sea positivo"
+      ],
+      "correcta": 0,
+      "explicacion": "El último tramo tiene que valer 1, porque a esa altura ya acumulaste el 100 % del área. Es tu control de calidad: si te sale distinto de 1, te olvidaste de sumar lo acumulado de alguna zona anterior o te equivocaste al reemplazar los límites."
+    },
+    {
+      "id": "c4-q10",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 3/3 — Te piden calcular P(X < 2,5) y ya tienes las dos funciones a la mano.\n\n¿Qué métodos puedes usar?",
+      "opciones": [
+        "Solo la densidad: la acumulada no sirve para probabilidades",
+        "Solo la acumulada: la densidad no se puede integrar",
+        "Ninguno: en una continua no se puede calcular P(X < 2,5)",
+        "Los DOS: integrar la densidad hasta 2,5, o simplemente evaluar la acumulada en 2,5"
+      ],
+      "correcta": 3,
+      "explicacion": "Son los dos métodos que se ven en clase y deben dar lo mismo. Con la densidad integras desde donde empieza la curva hasta 2,5. Con la acumulada es más rápido: reemplazas x = 2,5 en el tramo que le corresponde y listo. Por eso vale la pena armar la acumulada."
+    }
+  ]
+}

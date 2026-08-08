@@ -164,6 +164,9 @@ const FICHAS = [
   { sprite: "combi", nombre: "La Combi Combinatoria", texto: "Jefa del malecón: se olvida del complemento." },
   { sprite: "cuy", nombre: "Cuy Esperado", texto: "Confunde el promedio con la varianza." },
   { sprite: "torito", nombre: "El Torito de la Varianza", texto: "Jefe de la plaza: se olvida de elevar la constante al cuadrado." },
+  { sprite: "flor", nombre: "La Flor Puntual", texto: "Jura que en una continua la probabilidad de un punto exacto no es cero." },
+  { sprite: "ardilla", nombre: "La Ardilla sin Normalizar", texto: "Su área bajo la curva nunca llega a 1." },
+  { sprite: "monumento", nombre: "El Monumento Acumulado", texto: "Jefe de Jesús María: se olvida de sumar lo que ya se acumuló en la zona anterior." },
 ];
 
 export function galeriaPersonajes(contenedor) {
