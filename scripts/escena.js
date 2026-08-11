@@ -167,6 +167,9 @@ const FICHAS = [
   { sprite: "flor", nombre: "La Flor Puntual", texto: "Jura que en una continua la probabilidad de un punto exacto no es cero." },
   { sprite: "ardilla", nombre: "La Ardilla sin Normalizar", texto: "Su área bajo la curva nunca llega a 1." },
   { sprite: "monumento", nombre: "El Monumento Acumulado", texto: "Jefe de Jesús María: se olvida de sumar lo que ya se acumuló en la zona anterior." },
+  { sprite: "globo", nombre: "El Globo Percentil", texto: "Busca su percentil en la zona equivocada." },
+  { sprite: "diana", nombre: "La Diana sin Ponderar", texto: "Suma las notas y divide entre tres, sin mirar los pesos." },
+  { sprite: "payaso", nombre: "El Payaso de Pearson", texto: "Jefe de Lince: calcula el coeficiente y no sabe interpretar el signo." },
 ];
 
 export function galeriaPersonajes(contenedor) {

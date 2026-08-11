@@ -1,0 +1,138 @@
+{
+  "nivel": "level5",
+  "clase": "Clase 05 · Variable aleatoria continua (Parte 02)",
+  "fuente": "Apuntes de la 5ta clase — Estadística 2",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "c5-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "¿QUÉ ES UN PERCENTIL?",
+      "opciones": [
+        "El porcentaje de datos que hay en total",
+        "El valor más repetido de la distribución",
+        "El VALOR que parte la distribución, dejando cierto porcentaje a un lado y el resto al otro",
+        "El área total bajo la curva"
+      ],
+      "correcta": 2,
+      "explicacion": "El percentil es un punto de corte sobre el eje X. El P10 deja el 10 % de los datos por debajo y el 90 % por encima. Y la MEDIANA no es otra cosa que el P50: parte la distribución justo por la mitad."
+    },
+    {
+      "id": "c5-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "VALOR ESPERADO. En una variable aleatoria DISCRETA el promedio era E(x) = Σ x·f(x).\n\n¿Cómo queda en una CONTINUA?",
+      "opciones": [
+        "E(x) = ∫ x·f(x) dx : la sumatoria evoluciona a integral",
+        "E(x) = Σ x·f(x), es exactamente igual",
+        "E(x) = f(x) evaluada en el punto medio",
+        "E(x) = 1, siempre"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el mismo promedio ponderado de siempre: cada valor por su peso. Lo único que cambia es que, al haber infinitos valores posibles, la sumatoria se convierte en una integral a lo largo de todo el rango donde la función existe."
+    },
+    {
+      "id": "c5-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "LA VARIANZA. ¿Cuál es la fórmula con el atajo que se usa en clase?",
+      "opciones": [
+        "var(x) = E(x) − μ",
+        "var(x) = ∫ f(x) dx",
+        "var(x) = [E(x)]² − E(x²)",
+        "var(x) = E(x²) − [E(x)]², con E(x²) = ∫ x²·f(x) dx"
+      ],
+      "correcta": 3,
+      "explicacion": "La definición es E[(x − μ)²], pero el atajo que conviene es E(x²) − μ². Y el E(x²) se calcula igualito que el promedio: la misma integral, solo que con la x elevada al cuadrado. Ojo con el orden: primero el cuadrado de la esperanza, después la resta."
+    },
+    {
+      "id": "c5-q4",
+      "nivel": "comprension",
+      "enunciado": "JHON NIEVES Y SUS NOTAS.\nTrabajos 12 (vale 30 %) · Parcial 12 (vale 50 %) · Final 05 (vale 20 %).\n\nÉl calculó (12 + 12 + 5) / 3 = 9,67. ¿Está bien?",
+      "opciones": [
+        "Sí, así se saca cualquier promedio",
+        "NO: hay que PONDERAR cada nota por su peso, y así el promedio sale 10,6",
+        "No, pero el resultado correcto es 9,67 de todas formas",
+        "Falta saber cuántos alumnos hay en el curso"
+      ],
+      "correcta": 1,
+      "explicacion": "Dividir entre 3 supondría que las tres notas pesan lo mismo, y no es el caso. Lo correcto es 12(0,30) + 12(0,50) + 5(0,20) = 3,6 + 6 + 1 = 10,6. Esa es exactamente la lógica del valor esperado: cada valor multiplicado por su peso, que en una variable aleatoria es su probabilidad."
+    },
+    {
+      "id": "c5-q5",
+      "nivel": "comprension",
+      "enunciado": "RECETITA DEL PERCENTIL, PRIMER PASO.\n\nAntes de despejar nada, ¿qué tienes que hacer?",
+      "opciones": [
+        "Integrar la densidad en todo el rango",
+        "Calcular primero el promedio",
+        "Despejar la X de la primera zona y listo",
+        "Ubicar en QUÉ ZONA cae el porcentaje que buscas, comparándolo con lo acumulado al final de cada zona"
+      ],
+      "correcta": 3,
+      "explicacion": "Si la primera zona acumula hasta 0,5 y buscas el P10, ese 10 % cae dentro de la primera zona. Pero si buscas el P90, ya te pasaste: hay que irte a la siguiente. Recién cuando sabes en qué tramo estás usas la ecuación de ESA zona."
+    },
+    {
+      "id": "c5-q6",
+      "nivel": "comprension",
+      "enunciado": "Te piden la MEDIANA de una variable aleatoria continua.\n\n¿Qué percentil es y qué significa?",
+      "opciones": [
+        "Es el P50: el valor que deja la mitad de los datos a cada lado",
+        "Es el P100, porque acumula todo",
+        "Es el promedio de los extremos del rango",
+        "Es el valor donde la densidad es más alta"
+      ],
+      "correcta": 0,
+      "explicacion": "La mediana es el P50 y se busca igual que cualquier percentil: ubicas la zona donde la acumulada llega a 0,50 e igualas. Ojo que no es lo mismo que el promedio ni que la moda: el punto más alto de la densidad es la moda, no la mediana."
+    },
+    {
+      "id": "c5-q7",
+      "nivel": "aplicacion",
+      "enunciado": "PEARSON — CASO 01. En la distribución de los pesos de los estudiantes de la UP: media 60 kg, mediana 60 kg y desviación estándar 0,1 kg.\n\n¿Cuál es el coeficiente de asimetría y qué significa?",
+      "opciones": [
+        "Skp = 60; la distribución está muy dispersa",
+        "Skp = 0,1; asimetría a la derecha",
+        "Skp = 0: la distribución es SIMÉTRICA",
+        "No se puede calcular con esos datos"
+      ],
+      "correcta": 2,
+      "explicacion": "Skp = 3(Media − Mediana) / Desviación estándar = 3(60 − 60) / 0,1 = 0. Cuando la media y la mediana coinciden, el numerador se hace cero y da igual cuánto valga la desviación: la distribución es simétrica, con las dos colitas parejas."
+    },
+    {
+      "id": "c5-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3 — PEARSON, CASO 02. Media 400 soles, mediana 450 soles, desviación estándar 70 soles.\n\nCalcula el coeficiente e interprétalo.",
+      "opciones": [
+        "Skp ≈ +2,14; asimetría a la derecha",
+        "Skp ≈ −2,14; asimetría a la IZQUIERDA (negativa)",
+        "Skp ≈ −0,71; simétrica",
+        "Skp ≈ 50; asimetría a la izquierda"
+      ],
+      "correcta": 1,
+      "explicacion": "Skp = 3(400 − 450) / 70 = 3(−50) / 70 = −150/70 ≈ −2,14. El signo es lo que manda: negativo significa asimetría a la izquierda, o sea que la colita se estira hacia los valores bajos y hay algunos casos con valores MENORES a lo usual. Fíjate que la media quedó por debajo de la mediana, justo por esos valores bajos que la jalan."
+    },
+    {
+      "id": "c5-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3 — Usa la acumulada del distrito anterior: F(x) = x²/8 para 0 ≤ x < 2, y esa zona acumula hasta 0,5.\n\nCalcula el P10.",
+      "opciones": [
+        "x = 0,10",
+        "x = 1,25",
+        "x = 0,80",
+        "x ≈ 0,89"
+      ],
+      "correcta": 3,
+      "explicacion": "Primero la zona: el 10 % es menor que el 0,5 que acumula el primer tramo, así que el P10 cae ahí. Luego igualas: 0,10 = x²/8 → x² = 0,8 → x = √0,8 ≈ 0,89. Cuidado con quedarse en el 0,8: ese es x al cuadrado, todavía falta la raíz."
+    },
+    {
+      "id": "c5-q10",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 3/3 — Te piden la VARIANZA de una variable aleatoria continua y solo te dan la función de densidad.\n\n¿Qué tienes que calcular y en qué orden?",
+      "opciones": [
+        "Primero E(x) = ∫x·f(x)dx, después E(x²) = ∫x²·f(x)dx, y por último var = E(x²) − [E(x)]²",
+        "Solo E(x²), porque la varianza es esa integral",
+        "La integral de f(x), que ya da la varianza",
+        "Primero el percentil 50 y luego lo elevas al cuadrado"
+      ],
+      "correcta": 0,
+      "explicacion": "Son dos integrales y una resta. La primera te da el promedio; la segunda es la misma pero con x², y se resuelve igualito. Al final restas el cuadrado del promedio. Si después te piden el CV, es la desviación estándar (raíz de la varianza) dividida entre el promedio."
+    }
+  ]
+}

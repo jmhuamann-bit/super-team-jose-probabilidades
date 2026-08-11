@@ -1,0 +1,34 @@
+{
+  "id": "level5",
+  "distrito": "Lince",
+  "clase": "Clase 05",
+  "titulo": "La feria de los percentiles",
+  "tema": "feria",
+  "musica": "feria",
+  "vehiculo": "limosina",
+  "intro": "En la feria de Lince ya no basta con acumular: ahora hay que partir la distribución en pedazos, sacarle el promedio y medirle la colita. Los bichos suman notas y dividen entre tres, buscan el percentil en la zona equivocada y le tienen miedo al signo de Pearson. Ponles orden.",
+  "repaso": [
+    "Percentil: el valor que parte la distribución dejando cierto porcentaje a un lado y el resto al otro. La MEDIANA es el P50.",
+    "Para hallar un percentil: primero ubica en qué zona cae el porcentaje, y recién ahí iguala el percentil con la acumulada y despeja la X.",
+    "Valor esperado: en la discreta era Σ x·f(x); en la continua la sumatoria evoluciona a integral, E(x) = ∫ x·f(x) dx.",
+    "Varianza: var(x) = E(x²) − [E(x)]², donde E(x²) = ∫ x²·f(x) dx. Se calcula igualito que el promedio, pero con la x al cuadrado.",
+    "Coeficiente de asimetría de Pearson = 3(Media − Mediana) / Desviación estándar. Si sale negativo, la colita va a la izquierda; si sale positivo, a la derecha; si es 0, es simétrica."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                ",
+    "                o o o o                       o o o                                       o o o               o o o                       o o o                         o o o                   ",
+    "          ?                   o o       L                 o o     G                 o o                 V                   o o     1                   o o       L             ?               ",
+    "                ====                          ====                                        ====                ====                        ====                          ====                    ",
+    "                          o o      o                                  o o    o                  o o                    o        o o                          o                                  ",
+    "  P           E           C                 E         X         E     C                 E           X       E                   C       E           X                 E           B         M   ",
+    "##################################   #######################################   #######################################   ###################################   #################################",
+    "##################################   #######################################   #######################################   ###################################   #################################",
+    "##################################   #######################################   #######################################   ###################################   #################################"
+  ]
+}
