@@ -1,0 +1,35 @@
+{
+  "id": "level6",
+  "distrito": "San Isidro",
+  "clase": "Clase 06",
+  "titulo": "Las torres de las discretas",
+  "tema": "torres",
+  "musica": "torres",
+  "vehiculo": "taxi",
+  "intro": "En San Isidro ya no hay que inventar la función: hay cuatro que se repiten en todos los exámenes y solo tienes que reconocer cuál te toca. Pero los bichos de la oficina sacan bolitas y no las devuelven, cuentan eventos sin mirar el intervalo y siguen esperando su primer éxito. Ponle nombre a cada distribución.",
+  "repaso": [
+    "BINOMIAL X~B(n;π): número de éxitos en n pruebas independientes, CON reemplazo, población infinita. Media = n·π · Varianza = n·π(1−π).",
+    "HIPERGEOMÉTRICA X~H(N,A,B,n): igual pero SIN reemplazo, pruebas dependientes, población finita. Media = n·(A/N).",
+    "GEOMÉTRICA X~G(π): en qué intento ocurre el PRIMER éxito. Media = 1/π. El rango arranca en 1.",
+    "POISSON X~P(μ): cuántos eventos ocurren en un intervalo de tiempo o espacio. Media = μ y la varianza vale lo MISMO. El rango arranca en 0.",
+    "Si el intervalo cambia, la media de Poisson se ajusta con una regla de tres simple.",
+    "CV = desviación estándar / media × 100 %."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                        ",
+    "                    o o o o                       o o o                                         o o o               o o o                       o o o                         o o o                     ",
+    "            ?                     o o       L                 o o     G                 o o                   V                   o o     1                   o o       L             ?                 ",
+    "                    ====                          ====                                          ====                ====                        ====                          ====                      ",
+    "                              o o      o                                    o o    o                  o o                    oo       o o                          o                                    ",
+    "  P               E           C                 E         X         E       C                 E           X       E                   C       E           X                 E           B           M   ",
+    "######################################   #########################################   #######################################    ##################################   ###################################",
+    "######################################   #########################################   #######################################    ##################################   ###################################",
+    "######################################   #########################################   #######################################    ##################################   ###################################"
+  ]
+}

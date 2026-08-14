@@ -170,6 +170,9 @@ const FICHAS = [
   { sprite: "globo", nombre: "El Globo Percentil", texto: "Busca su percentil en la zona equivocada." },
   { sprite: "diana", nombre: "La Diana sin Ponderar", texto: "Suma las notas y divide entre tres, sin mirar los pesos." },
   { sprite: "payaso", nombre: "El Payaso de Pearson", texto: "Jefe de Lince: calcula el coeficiente y no sabe interpretar el signo." },
+  { sprite: "maletin", nombre: "El Maletín sin Reemplazo", texto: "Saca bolitas y nunca las devuelve, pero usa la binomial igual." },
+  { sprite: "corbata", nombre: "La Corbata Geométrica", texto: "Sigue intentando y no sabe en qué intento llegará su primer éxito." },
+  { sprite: "ejecutivo", nombre: "El Ejecutivo Binomial", texto: "Jefe de San Isidro: confunde el número de pruebas con el de éxitos." },
 ];
 
 export function galeriaPersonajes(contenedor) {
