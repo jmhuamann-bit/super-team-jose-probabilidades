@@ -173,6 +173,10 @@ const FICHAS = [
   { sprite: "maletin", nombre: "El Maletín sin Reemplazo", texto: "Saca bolitas y nunca las devuelve, pero usa la binomial igual." },
   { sprite: "corbata", nombre: "La Corbata Geométrica", texto: "Sigue intentando y no sabe en qué intento llegará su primer éxito." },
   { sprite: "ejecutivo", nombre: "El Ejecutivo Binomial", texto: "Jefe de San Isidro: confunde el número de pruebas con el de éxitos." },
+  { sprite: "parapente", nombre: "El Parapente Puntual", texto: "Se aferra a un punto exacto de la curva, donde la probabilidad es cero." },
+  { sprite: "tabla", nombre: "La Tabla de Densidad", texto: "Quiere calcular probabilidades con la densidad, que solo sirve para dibujar." },
+  { sprite: "cangrejo", nombre: "El Cangrejo Mal Tipificado", texto: "Estandariza de costado y se olvida de redondear la Z a dos decimales." },
+  { sprite: "gato", nombre: "El Gato de la Tablita Z", texto: "Jefe de Miraflores: busca los «mayor que» directo en la tabla, sin complemento." },
 ];
 
 export function galeriaPersonajes(contenedor) {

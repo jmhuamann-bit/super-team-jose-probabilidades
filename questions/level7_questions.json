@@ -1,0 +1,138 @@
+{
+  "nivel": "level7",
+  "clase": "Clase 07 · Funciones de probabilidad continuas más conocidas",
+  "fuente": "Apuntes de la 7ma clase — Estadística 2",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "p7-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "LAS 7 DISTRIBUCIONES MÁS CONOCIDAS. Cuatro son discretas: binomial, Poisson, geométrica e hipergeométrica.\n\n¿Cuáles son las tres CONTINUAS?",
+      "opciones": [
+        "Normal, Uniforme y Exponencial",
+        "Normal, Binomial y Uniforme",
+        "Normal, Poisson y Exponencial",
+        "Uniforme, Exponencial e Hipergeométrica"
+      ],
+      "correcta": 0,
+      "explicacion": "Las cuatro discretas se reconocen por pistas del enunciado: binomial si es con reemplazo o población infinita, hipergeométrica si es sin reemplazo o población finita, Poisson si hay un intervalo de tiempo, geométrica si aparece un «hasta que». Las continuas son más fáciles: el problema te lo dice explícitamente."
+    },
+    {
+      "id": "p7-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "CASO PREVIO. En una variable aleatoria CONTINUA te preguntan por P(X = 30), la probabilidad de un valor exacto.\n\n¿Cuánto vale?",
+      "opciones": [
+        "Depende de la media y la desviación",
+        "Vale lo mismo que P(X < 30)",
+        "Se busca directo en la tabla Z",
+        "Vale CERO: la probabilidad es el área bajo la curva y un punto no tiene área"
+      ],
+      "correcta": 3,
+      "explicacion": "Por eso en las continuas las probabilidades siempre se piden por tramos, con «menor que» o «mayor que». Y de aquí sale algo cómodo: como el punto no aporta nada, da igual escribir P(X < a) que P(X ≤ a), son la misma probabilidad."
+    },
+    {
+      "id": "p7-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "Tienes la función de DENSIDAD y la función ACUMULADA de probabilidad.\n\n¿Con cuál se calculan las probabilidades?",
+      "opciones": [
+        "Con la de densidad, que por eso se llama así",
+        "Con cualquiera de las dos, dan lo mismo",
+        "Con la ACUMULADA. La de densidad solo sirve para dibujar la figura",
+        "Con la densidad si es normal y con la acumulada si es uniforme"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el mismo par que ya viste en las discretas, pero acá la diferencia pesa más. La densidad te da la altura de la curva en un punto, y esa altura no es una probabilidad: la probabilidad es el ÁREA. La acumulada es justamente la que ya trae esa área calculada."
+    },
+    {
+      "id": "p7-q4",
+      "nivel": "comprension",
+      "enunciado": "RECETITA PARA ESTANDARIZAR. El precio de un libro es X ~ N(μ = 50 ; σ² = 9²) y quieres P(X < 60).\n\n¿Cuál es la Z con la que entras a la tabla?",
+      "opciones": [
+        "Z = 1,1",
+        "Z = 1,11",
+        "Z = 10",
+        "Z = 0,90"
+      ],
+      "correcta": 1,
+      "explicacion": "Z = (X − μ) / σ = (60 − 50) / 9 = 1,1111…, y la Z SIEMPRE se redondea a dos decimales, así que entras con 1,11. Los dos decimales no son un capricho: la tabla tiene el entero y el primer decimal en el eje vertical y el segundo decimal en el horizontal. Con 1,11 buscas la fila 1,1 y la columna 0,01, y sale 0,8665."
+    },
+    {
+      "id": "p7-q5",
+      "nivel": "comprension",
+      "enunciado": "CASO «MAYOR». Con el mismo libro, X ~ N(50 ; 9²), te piden P(X > 40). Sabes que P(X < 40) = 0,1335.\n\n¿Cómo lo resuelves y cuánto da?",
+      "opciones": [
+        "Se busca directo en la tabla el valor de «mayor que»: 0,1335",
+        "Se multiplica 0,1335 por 2: 0,2670",
+        "No se puede calcular sin conocer la mediana",
+        "Por complemento: 1 − 0,1335 = 0,8665"
+      ],
+      "correcta": 3,
+      "explicacion": "La tabla Z solo trae probabilidades acumuladas hacia la izquierda, o sea «menor que». Para un «mayor que» hay que restarle a 1 lo que sí está en la tabla. Existe el atajo de la simetría, P(X > a) = P(X < −a), pero el apunte lo marca como NO aconsejable: el complemento nunca te confunde el signo."
+    },
+    {
+      "id": "p7-q6",
+      "nivel": "comprension",
+      "enunciado": "El tiempo en llegar a casa es X ~ N(μ = 53 ; σ² = 4²) y te preguntan qué porcentaje tarda MENOS de 16 minutos. Estandarizas y te sale Z = −9,25, que no aparece en la tabla.\n\n¿Qué respondes?",
+      "opciones": [
+        "Aproximadamente 0: por debajo de −4 la probabilidad ya es prácticamente nula",
+        "No se puede resolver, falta información",
+        "0,5, porque está en el centro de la curva",
+        "Aproximadamente 1, porque el valor es muy grande en valor absoluto"
+      ],
+      "correcta": 0,
+      "explicacion": "La tabla se corta más o menos en ±4 porque de ahí en adelante ya no queda área que valga la pena. Vale la pena memorizar los cuatro casos: P(Z < −4) ≈ 0 y P(Z > 4) ≈ 0, mientras que P(Z > −4) ≈ 1 y P(Z < 4) ≈ 1. Acá tiene todo el sentido: llegar en 16 minutos cuando el promedio es 53 y la desviación 4 sería un milagro."
+    },
+    {
+      "id": "p7-q7",
+      "nivel": "aplicacion",
+      "enunciado": "CASO INTERVALO. Con X ~ N(50 ; 9²), ¿cuál es la probabilidad de que el libro cueste entre 55 y 60 soles?\n\nDatos de tabla: P(Z < 0,56) = 0,7123 y P(Z < 1,11) = 0,8665.",
+      "opciones": [
+        "1,5788, sumando las dos probabilidades",
+        "0,7123, la del extremo menor",
+        "0,1542, restando la del extremo mayor menos la del menor",
+        "0,8665, la del extremo mayor"
+      ],
+      "correcta": 2,
+      "explicacion": "Se estandarizan los dos extremos: (55 − 50)/9 = 0,56 y (60 − 50)/9 = 1,11. Un intervalo siempre se arma restando: P(a < X < b) = P(X < b) − P(X < a), o sea 0,8665 − 0,7123 = 0,1542. Restar es lo que «encierra» el pedazo que te piden; sumar te daría un área que se sale de la curva."
+    },
+    {
+      "id": "p7-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3 — EL PROCESO INVERSO. Ahora X ~ N(50 ; 13²) y te preguntan cuánto debe costar un libro para estar en el QUINTO SUPERIOR de los precios.\n\nEl Z asociado a 0,80 se aproxima a 0,84. ¿Cuál es el precio?",
+      "opciones": [
+        "0,84 soles",
+        "60,92 soles",
+        "39,08 soles",
+        "50,84 soles"
+      ],
+      "correcta": 1,
+      "explicacion": "Estar en el quinto superior es estar en el percentil 80, o sea que por debajo tuyo hay 0,80 de probabilidad. Acá el camino va al revés: probabilidad → Z → X. Con Z = 0,84 despejas de la fórmula: X = μ + Z·σ = 50 + 0,84(13) = 60,92. Conclusión: el libro tiene que costar como mínimo 60,92 soles."
+    },
+    {
+      "id": "p7-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3 — LAS OTRAS DOS CONTINUAS.\n\n① Un bus pasa con tiempo UNIFORME entre 10 y 20 minutos: ¿probabilidad de esperar menos de 15?\n② La atención en un banco es EXPONENCIAL con β = 4: ¿probabilidad de ser atendido en menos de 5 minutos?",
+      "opciones": [
+        "① 0,50 y ② 0,7135",
+        "① 0,50 y ② 0,2865",
+        "① 0,25 y ② 0,7135",
+        "① 0,50 y ② 0,50"
+      ],
+      "correcta": 0,
+      "explicacion": "En la uniforme el área es un rectángulo, así que basta una proporción: (15 − 10) / (20 − 10) = 0,50. En la exponencial usas la acumulada F(x) = 1 − e^(−x/β): 1 − e^(−5/4) = 1 − 0,2865 = 0,7135. Ojo con la trampa de la alternativa B: 0,2865 es el e^(−1,25) suelto, o sea la probabilidad de lo CONTRARIO, tardar más de 5 minutos."
+    },
+    {
+      "id": "p7-q10",
+      "nivel": "comprension",
+      "enunciado": "JEFE 3/3 — ORO PURO: DEL TEXTO AL PLANTEAMIENTO. Con X ~ N(200 ; 140²) te piden la probabilidad de que «el peso neto DIFIERA de su media en MÁS DE 120 gramos».\n\n¿Cómo se plantea?",
+      "opciones": [
+        "P(X − 200 > 120), sin valor absoluto",
+        "P(X > 320), solo el lado derecho",
+        "P(X < 80), solo el lado izquierdo",
+        "P(|X − μ| > 120), que por complemento es 1 − P(−0,86 < Z < 0,86) ≈ 0,3898"
+      ],
+      "correcta": 3,
+      "explicacion": "«Difiere» es la palabra clave del valor absoluto: no importa si se pasa por arriba o por abajo, cuenta la distancia. Como es «más de», conviene el complemento: 1 − P(|X − μ| ≤ 120), y el valor absoluto se abre en −120 < X − μ < 120. Estandarizando, 120/140 = 0,86, así que queda 1 − (0,8051 − 0,1949) = 1 − 0,6102 = 0,3898. Compara con «supera a su media en más de 120», que sería solo X − μ > 120, sin valor absoluto."
+    }
+  ]
+}

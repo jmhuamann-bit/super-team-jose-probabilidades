@@ -1,0 +1,37 @@
+{
+  "id": "level7",
+  "distrito": "Miraflores",
+  "clase": "Clase 07",
+  "titulo": "El acantilado de la campana",
+  "tema": "acantilado",
+  "musica": "acantilado",
+  "vehiculo": "limosina",
+  "intro": "Última parada: el malecón de Miraflores al atardecer. Acá terminan las siete distribuciones más conocidas, y las tres que faltaban son continuas: la Normal con su tablita Z, la Uniforme y la Exponencial. Los bichos del acantilado se aferran a un punto exacto de la curva donde no hay nada, quieren calcular con la función de densidad en vez de la acumulada, y estandarizan de costado sin redondear la Z. Aprende a leer la tabla y cae el gato.",
+  "repaso": [
+    "De las 7 distribuciones conocidas, 4 son discretas (binomial, Poisson, geométrica, hipergeométrica) y 3 son continuas: NORMAL, UNIFORME y EXPONENCIAL.",
+    "En una variable continua la probabilidad de un punto exacto es CERO: P(X = a) = 0, porque la probabilidad es el área bajo la curva y un punto no tiene área.",
+    "La función de DENSIDAD solo sirve para dibujar la figura. Para calcular probabilidades se usa la función ACUMULADA.",
+    "Normal: se define X ~ N(μ ; σ²) y se estandariza con Z = (X − μ) / σ, redondeando la Z a DOS decimales.",
+    "En la tabla Z, el entero y el primer decimal están en el eje vertical, y el segundo decimal en el horizontal.",
+    "CASO «menor»: sale directo de la tabla. CASO «mayor»: por complemento, P(X > a) = 1 − P(X ≤ a). CASO «intervalo»: se resta el mayor menos el menor.",
+    "Si la Z se pasa de 4 o de −4 no está en la tabla, pero no hace falta: P(Z < −4) ≈ 0 y P(Z < 4) ≈ 1.",
+    "ORO PURO para traducir el texto: «A supera a B en más de C» es A − B > C; «A difiere de B en más de C» es |A − B| > C, y el valor absoluto se abre en dos partes."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                ",
+    "                  o o o                             o o o                             o o o                   o o o                 o o o                       o o o                     o o o                 ",
+    "            ?               o o     L             o o       G                 o o             V                 o o     1                   o o       L o o                     ?     o o             1   o o   ",
+    "                  ====                              ====                              ====                    ====                  ====                        ====                      ====                  ",
+    "                      o o               o o               o o                 o o           o o                       o o             o o           o o           o o             o o               o o         ",
+    "  P             E           C               E         X       E                   C       E     X                   E             C               E         X         E               X         B           M   ",
+    "##################################   #################################    ##############################   ###############################    ##############################   #################################",
+    "##################################   #################################    ##############################   ###############################    ##############################   #################################",
+    "##################################   #################################    ##############################   ###############################    ##############################   #################################"
+  ]
+}
