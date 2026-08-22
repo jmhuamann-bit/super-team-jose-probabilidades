@@ -12,7 +12,7 @@
         "Armar la TABLA DE CONTINGENCIA: X en las filas, Y en las columnas y los totales al borde",
         "Calcular de frente la covarianza",
         "Sacar el coeficiente de Pearson",
-        "Condicionar una variable sobre la otra"
+        "Comprobar de frente si son independientes"
       ],
       "correcta": 0,
       "explicacion": "Sin la tabla no tienes de dónde sacar nada. Y cómo la llenas depende del muestreo: con reemplazo sale binomial, sin reemplazo y sin orden por combinatorias."
@@ -24,7 +24,7 @@
       "opciones": [
         "Los del borde son la conjunta y los de adentro las marginales",
         "Los dos son lo mismo, solo cambian de lugar",
-        "Los del borde son las condicionales",
+        "Los del borde son los que entran a E(XY)",
         "Los de ADENTRO son la conjunta f(x,y); los del BORDE son las marginales, o sea el total de su fila o columna"
       ],
       "correcta": 3,
@@ -33,15 +33,15 @@
     {
       "id": "p8-q3",
       "nivel": "reconocimiento",
-      "enunciado": "Te piden la distribución CONDICIONAL f(x | Y = 1).\n\n¿Qué encierras?",
+      "enunciado": "El tipo de muestreo decide cómo llenas la tabla.\n\n¿Qué técnica va con cada uno?",
       "opciones": [
-        "Toda la tabla, porque son dos variables",
-        "La fila de X = 1",
-        "La COLUMNA de Y = 1, y divides cada celda entre el total de esa columna",
-        "Solo la celda donde X = 1 e Y = 1"
+        "Las tres se llenan igual, con combinatorias",
+        "Con reemplazo van permutaciones y sin reemplazo, binomial",
+        "CON reemplazo → binomial · SIN reemplazo y sin orden → combinatorias · sin reemplazo CON orden → permutaciones",
+        "Solo se puede armar la tabla si es con reemplazo"
       ],
       "correcta": 2,
-      "explicacion": "La condición manda: si Y ya vale 1, solo existe esa columna. Al dividir entre su total, la condicional suma 1 y se vuelve una variable unidimensional cualquiera."
+      "explicacion": "Con reemplazo la urna nunca se agota y cada saque repite la misma probabilidad. Sin reemplazo sí se agota, y ahí importa si el orden cuenta o no."
     },
     {
       "id": "p8-q4",
@@ -111,15 +111,15 @@
     {
       "id": "p8-q9",
       "nivel": "aplicacion",
-      "enunciado": "JEFE 2/3. La columna de Y = 1 tiene 15/45, 6/45 y 0, con un total de 21/45.\n\n¿Cuál es la condicional f(x | Y=1) y su media?",
+      "enunciado": "JEFE 2/3. La marginal de X es 28/45, 16/45 y 1/45 para X = 0, 1 y 2.\n\n¿Cuánto valen E(X) y Var(X)?",
       "opciones": [
-        "f = 15/21, 6/21 y 0, con E(X|Y=1) = 0,2857",
-        "f = 15/45, 6/45 y 0, con E(X|Y=1) = 0,1333",
-        "f = 10/21, 6/21 y 1/21, con E(X|Y=1) = 0,4",
-        "f = 6/21, 15/21 y 0, con E(X|Y=1) = 0,7143"
+        "E(X) = 0,4 y Var(X) = 0,2844",
+        "E(X) = 0,4 y Var(X) = 0,4444",
+        "E(X) = 0,4444 y Var(X) = 0,16",
+        "E(X) = 1 y Var(X) = 0,2844"
       ],
       "correcta": 0,
-      "explicacion": "Cada celda de la columna se divide entre 21: queda 0,7143 y 0,2857, que suman 1. Luego E(X|Y=1) = 0(0,7143) + 1(0,2857) + 2(0) = 0,2857. Ojo que NO es la misma que E(X) = 0,4."
+      "explicacion": "Multiplicas cada valor por su total marginal: E(X) = 0(28/45) + 1(16/45) + 2(1/45) = 0,4. Luego E(X²) = 1(16/45) + 4(1/45) = 0,4444, y Var = 0,4444 − 0,4² = 0,2844."
     },
     {
       "id": "p8-q10",

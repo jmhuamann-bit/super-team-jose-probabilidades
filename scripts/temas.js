@@ -550,7 +550,7 @@ export const TEMAS = {
     suelo: { cara: "#7b6b8f", borde: "#c9a4d6", tierra: "#3d3350", plataforma: "#e07a3f", plataformaBorde: "#ffbc82" },
     acento: "#ff8fab",
     bichos: ["guitarra", "aerosol", "cajon"],
-    nombresBichos: ["La Guitarra de Dos Cuerdas", "El Aerosol de la Ermita", "El Cajón sin Condición"],
+    nombresBichos: ["La Guitarra de Dos Cuerdas", "El Aerosol de la Ermita", "El Cajón de Puro Borde"],
     jefe: "bohemio",
     nombreJefe: "El Bohemio Independiente",
 

@@ -6,17 +6,17 @@
   "tema": "barranco",
   "musica": "barranco",
   "vehiculo": "combi",
-  "intro": "El Puente de los Suspiros une dos lados a la vez, y eso es exactamente lo que hace una distribución bivariada: dos variables aleatorias al mismo tiempo. Acá se arma la tabla de contingencia, se leen los totales de los bordes, se encierra una fila o una columna para condicionar, y recién ahí se mide si las dos van juntas o cada una por su lado.",
+  "intro": "El Puente de los Suspiros une dos lados a la vez, y eso es exactamente lo que hace una distribución bivariada: dos variables aleatorias al mismo tiempo. Acá se arma la tabla de contingencia, se leen los totales de los bordes, y con eso se mide si las dos van juntas o cada una por su lado.",
   "repaso": [
     "1ER PASO: armar la TABLA DE CONTINGENCIA con X en las filas, Y en las columnas y sus totales al borde.",
     "Depende del muestreo: CON reemplazo sale binomial, SIN reemplazo y sin orden sale por combinatorias (hipergeométrica), y sin reemplazo CON orden por permutaciones.",
+    "Con permutaciones vale la equivalencia P(5,2) = C(5,2) · P(2,2): primero seleccionas y después ordenas lo seleccionado.",
     "Lo de ADENTRO de la tabla es la conjunta f(x,y). Lo del BORDE son las marginales: f(x) es el total de su fila y f(y) el de su columna.",
+    "Toda la tabla tiene que sumar 1, y las marginales también por separado. Es la comprobación más barata que tienes.",
     "2DO PASO: E(X) = Σ x · (total marginal), y lo mismo con X². Para el cruce, E(XY) = Σ x · y · (probabilidad de ADENTRO de la tabla).",
+    "Var(X) = E(X²) − [E(X)]², y de ahí sale σx sacando la raíz.",
     "Covarianza = E(XY) − E(X)·E(Y). Y el Pearson: ρ = Cov / (σx · σy), que siempre queda entre −1 y 1.",
-    "INDEPENDENCIA estocástica: se cumple solo si f(x,y) = f(x)·f(y) en TODAS las celdas. Basta que falle una para que no sean independientes.",
-    "3ER PASO, CONDICIONAL: si te piden f(x | y=1) encierras la COLUMNA de y=1; si te piden f(y | x=1) encierras la FILA de x=1.",
-    "Cada celda encerrada se divide entre el total de esa fila o columna, y la condicional tiene que sumar 1.",
-    "Ya condicionada se vuelve unidimensional: E(X|Y), Var(X|Y) = E(X²|Y) − [E(X|Y)]², y el CV = (desviación / media) × 100."
+    "INDEPENDENCIA estocástica: se cumple solo si f(x,y) = f(x)·f(y) en TODAS las celdas. Basta que falle una para que no sean independientes."
   ],
   "mapa": [
     "                                                                                                                                                                                                                        ",

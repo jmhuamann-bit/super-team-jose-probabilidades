@@ -179,7 +179,7 @@ const FICHAS = [
   { sprite: "gato", nombre: "El Gato de la Tablita Z", texto: "Jefe de Miraflores: busca los «mayor que» directo en la tabla, sin complemento." },
   { sprite: "guitarra", nombre: "La Guitarra de Dos Cuerdas", texto: "Toca las dos al mismo tiempo pero solo escucha una: le da igual la conjunta que la marginal." },
   { sprite: "aerosol", nombre: "El Aerosol de la Ermita", texto: "Como la iglesia sin techo del puente: deja la tabla a medias, sin los totales." },
-  { sprite: "cajon", nombre: "El Cajón sin Condición", texto: "Nunca se sienta en la fila ni en la columna que le tocaba condicionar." },
+  { sprite: "cajon", nombre: "El Cajón de Puro Borde", texto: "Solo golpea los bordes y nunca el centro: para E(XY) usa los totales en vez de las de adentro." },
   { sprite: "bohemio", nombre: "El Bohemio Independiente", texto: "Jefe de Barranco: jura que X e Y son independientes sin haber comprobado una sola celda." },
 ];
 
