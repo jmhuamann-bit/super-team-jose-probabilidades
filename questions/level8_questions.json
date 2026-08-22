@@ -1,0 +1,138 @@
+{
+  "nivel": "level8",
+  "clase": "Clase 08 · Distribuciones bivariadas discretas",
+  "fuente": "Apuntes de la 8va clase — Estadística 2",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "p8-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "Tienes DOS variables aleatorias al mismo tiempo.\n\n¿Cuál es el primer paso de la recetita?",
+      "opciones": [
+        "Armar la TABLA DE CONTINGENCIA: X en las filas, Y en las columnas y los totales al borde",
+        "Calcular de frente la covarianza",
+        "Sacar el coeficiente de Pearson",
+        "Condicionar una variable sobre la otra"
+      ],
+      "correcta": 0,
+      "explicacion": "Sin la tabla no tienes de dónde sacar nada. Y cómo la llenas depende del muestreo: con reemplazo sale binomial, sin reemplazo y sin orden por combinatorias."
+    },
+    {
+      "id": "p8-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "En una tabla de contingencia, ¿qué son los números del BORDE frente a los de ADENTRO?",
+      "opciones": [
+        "Los del borde son la conjunta y los de adentro las marginales",
+        "Los dos son lo mismo, solo cambian de lugar",
+        "Los del borde son las condicionales",
+        "Los de ADENTRO son la conjunta f(x,y); los del BORDE son las marginales, o sea el total de su fila o columna"
+      ],
+      "correcta": 3,
+      "explicacion": "La marginal de X es sumar toda su fila, o sea barrer todos los valores de Y. Por eso vive «al margen» de la tabla, en el borde."
+    },
+    {
+      "id": "p8-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "Te piden la distribución CONDICIONAL f(x | Y = 1).\n\n¿Qué encierras?",
+      "opciones": [
+        "Toda la tabla, porque son dos variables",
+        "La fila de X = 1",
+        "La COLUMNA de Y = 1, y divides cada celda entre el total de esa columna",
+        "Solo la celda donde X = 1 e Y = 1"
+      ],
+      "correcta": 2,
+      "explicacion": "La condición manda: si Y ya vale 1, solo existe esa columna. Al dividir entre su total, la condicional suma 1 y se vuelve una variable unidimensional cualquiera."
+    },
+    {
+      "id": "p8-q4",
+      "nivel": "comprension",
+      "enunciado": "Una urna tiene 2 azules, 3 rojas y 5 verdes (10 en total). Sacas 2 pelotas SIN reemplazo y sin orden. X = azules, Y = rojas.\n\n¿Cuál es P(X = 1, Y = 1)?",
+      "opciones": [
+        "10/45",
+        "6/45",
+        "15/45",
+        "1/45"
+      ],
+      "correcta": 1,
+      "explicacion": "Casos totales: C(10,2) = 45. Para 1 azul y 1 roja: C(2,1) × C(3,1) = 2 × 3 = 6. Queda 6/45. Fíjate que ahí ya no cabe ninguna verde, porque solo sacas dos."
+    },
+    {
+      "id": "p8-q5",
+      "nivel": "comprension",
+      "enunciado": "La tabla completa (sobre 45) es:\nX=0 → 10, 15, 3   ·   X=1 → 10, 6, 0   ·   X=2 → 1, 0, 0\n\n¿Cuál es la marginal de X?",
+      "opciones": [
+        "21/45, 21/45 y 3/45",
+        "10/45, 10/45 y 1/45",
+        "15/45, 6/45 y 0",
+        "28/45, 16/45 y 1/45"
+      ],
+      "correcta": 3,
+      "explicacion": "Se suma cada fila: 10+15+3 = 28, luego 10+6+0 = 16 y 1+0+0 = 1. Comprueba que sumen 45. La otra alternativa, 21/45 y 21/45, es la marginal de Y, que sale por columnas."
+    },
+    {
+      "id": "p8-q6",
+      "nivel": "comprension",
+      "enunciado": "Con esa misma tabla: P(X=0, Y=0) = 10/45 = 0,2222, mientras que P(X=0) = 28/45 y P(Y=0) = 21/45.\n\n¿Son X e Y independientes?",
+      "opciones": [
+        "NO: el producto de las marginales da 0,2904 y no coincide con 0,2222",
+        "Sí, porque las dos marginales suman 1",
+        "Sí, porque salen de la misma urna",
+        "No se puede saber sin la covarianza"
+      ],
+      "correcta": 0,
+      "explicacion": "Para ser independientes tendría que cumplirse f(x,y) = f(x)·f(y) en TODAS las celdas. Con que falle una ya se cae, y acá falla en la primera que revisas."
+    },
+    {
+      "id": "p8-q7",
+      "nivel": "aplicacion",
+      "enunciado": "De la tabla salen E(X) = 0,4 y E(Y) = 0,6. La única celda donde x·y no es cero es (X=1, Y=1), que vale 6/45.\n\n¿Cuánto valen E(XY) y la covarianza?",
+      "opciones": [
+        "E(XY) = 0,24 y Cov = 0",
+        "E(XY) = 0,1333 y Cov = +0,1067",
+        "E(XY) = 0,1333 y Cov = −0,1067",
+        "E(XY) = 0,24 y Cov = −0,1067"
+      ],
+      "correcta": 2,
+      "explicacion": "E(XY) = 1 × 1 × 6/45 = 0,1333. Luego Cov = 0,1333 − (0,4)(0,6) = −0,1067. Sale negativa y tiene todo el sentido: mientras más azules saques, menos rojas te caben."
+    },
+    {
+      "id": "p8-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3. Ya tienes Cov = −0,1067. Las desviaciones son σx = 0,5333 y σy = 0,6110.\n\n¿Cuál es el coeficiente de correlación de PEARSON?",
+      "opciones": [
+        "−0,1067",
+        "−0,3273",
+        "+0,3273",
+        "−3,2733"
+      ],
+      "correcta": 1,
+      "explicacion": "ρ = Cov / (σx · σy) = −0,1067 / (0,5333 × 0,6110) = −0,3273. Siempre tiene que caer entre −1 y 1, así que si te sale −3,27 es que te olvidaste de dividir."
+    },
+    {
+      "id": "p8-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3. La columna de Y = 1 tiene 15/45, 6/45 y 0, con un total de 21/45.\n\n¿Cuál es la condicional f(x | Y=1) y su media?",
+      "opciones": [
+        "f = 15/21, 6/21 y 0, con E(X|Y=1) = 0,2857",
+        "f = 15/45, 6/45 y 0, con E(X|Y=1) = 0,1333",
+        "f = 10/21, 6/21 y 1/21, con E(X|Y=1) = 0,4",
+        "f = 6/21, 15/21 y 0, con E(X|Y=1) = 0,7143"
+      ],
+      "correcta": 0,
+      "explicacion": "Cada celda de la columna se divide entre 21: queda 0,7143 y 0,2857, que suman 1. Luego E(X|Y=1) = 0(0,7143) + 1(0,2857) + 2(0) = 0,2857. Ojo que NO es la misma que E(X) = 0,4."
+    },
+    {
+      "id": "p8-q10",
+      "nivel": "comprension",
+      "enunciado": "JEFE 3/3. Ahora sacas las 2 pelotas CON reemplazo, de la misma urna de 2 azules, 3 rojas y 5 verdes.\n\n¿Qué cambia?",
+      "opciones": [
+        "Nada, la tabla queda igual",
+        "Deja de haber tabla de contingencia",
+        "X e Y pasan a ser independientes",
+        "Cada extracción vuelve a tener la misma probabilidad, así que las marginales salen BINOMIALES: X con p = 0,2 y Y con p = 0,3"
+      ],
+      "correcta": 3,
+      "explicacion": "Al reponer la pelota, la urna no se agota y cada saque es idéntico al anterior. X queda Binomial(2 ; 0,2), o sea 0,64, 0,32 y 0,04. Sin reemplazo era hipergeométrica: 28/45, 16/45 y 1/45."
+    }
+  ]
+}

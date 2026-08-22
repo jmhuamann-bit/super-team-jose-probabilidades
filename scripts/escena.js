@@ -177,6 +177,10 @@ const FICHAS = [
   { sprite: "tabla", nombre: "La Tabla de Densidad", texto: "Quiere calcular probabilidades con la densidad, que solo sirve para dibujar." },
   { sprite: "cangrejo", nombre: "El Cangrejo Mal Tipificado", texto: "Estandariza de costado y se olvida de redondear la Z a dos decimales." },
   { sprite: "gato", nombre: "El Gato de la Tablita Z", texto: "Jefe de Miraflores: busca los «mayor que» directo en la tabla, sin complemento." },
+  { sprite: "guitarra", nombre: "La Guitarra de Dos Cuerdas", texto: "Toca las dos al mismo tiempo pero solo escucha una: le da igual la conjunta que la marginal." },
+  { sprite: "aerosol", nombre: "El Aerosol de la Ermita", texto: "Como la iglesia sin techo del puente: deja la tabla a medias, sin los totales." },
+  { sprite: "cajon", nombre: "El Cajón sin Condición", texto: "Nunca se sienta en la fila ni en la columna que le tocaba condicionar." },
+  { sprite: "bohemio", nombre: "El Bohemio Independiente", texto: "Jefe de Barranco: jura que X e Y son independientes sin haber comprobado una sola celda." },
 ];
 
 export function galeriaPersonajes(contenedor) {

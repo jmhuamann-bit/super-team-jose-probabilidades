@@ -59,6 +59,13 @@ const TEMAS_MUSICA = {
               "E4",2,"G4",2,"B4",2,"E5",2,"D5",4,"A4",4],
     bajo:    ["D3",4,"D3",4,"A2",4,"A2",4,"E3",4,"E3",4,"D3",4,"D3",4],
   },
+  barranco: { // Barranco: vals criollo de peña, lento y con swing
+    tempo: 0.19, onda: "triangle",
+    melodia: ["A4",2,"B4",1,"C5",3,"B4",2,"A4",2,"G4",4,
+              "E4",2,"G4",1,"A4",3,"G4",2,"E4",2,"A4",4],
+    bajo:    ["A2",3,"E3",3,"A2",2,"D3",3,"A2",3,"E2",2,
+              "A2",3,"C3",3,"E3",2,"A2",4,"E2",4],
+  },
   acantilado: { // Miraflores: atardecer en el malecón, amplio y de cierre
     tempo: 0.18, onda: "triangle",
     melodia: ["C5",2,"E5",2,"G5",4,"F5",2,"E5",2,"D5",4,
