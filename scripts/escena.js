@@ -183,8 +183,8 @@ const FICHAS = [
   { sprite: "metropatron", nombre: "La Barra de Sèvres Confundida", texto: "París: cree que un número sacado de una muestra ya es el parámetro, cuando el parámetro usa a TODA la población." },
   { sprite: "teodolito", nombre: "El Teodolito de Méchain", texto: "Mide con un error que nunca corrigió: su promedio no cae en el parámetro, que es justamente lo que se llama SESGO." },
   { sprite: "veleta", nombre: "El Gallo de la Veleta", texto: "Gira con cada muestra nueva y por eso desconfía de todo: no distingue un estimador variable de uno eficiente." },
-  { sprite: "reloj", nombre: "El Reloj de la Conciergerie", texto: "Exige la hora exacta: siempre quiere estimación puntual, aunque el intervalo sea más confiable." },
-  { sprite: "gargola", nombre: "La Gárgola del 100%", texto: "Desde lo alto jura que un intervalo al 95% garantiza que el parámetro está adentro, y no es así." },
+  { sprite: "reloj", nombre: "El Reloj que Nunca se Ajusta", texto: "Lleva siglos marcando lo mismo: por más datos que le des nunca se acerca más al valor real. Eso es no ser consistente." },
+  { sprite: "gargola", nombre: "La Gárgola de los Extremos", texto: "Desde lo alto solo ve al más alto y al más bajo, y bota todos los datos del medio: desperdicia muestra, o sea no es suficiente." },
   { sprite: "censista", nombre: "El Censista del Meridiano", texto: "Jefe de París: no se fía de ninguna muestra y quiere medir a toda la población, aunque sea imposible." },
   { sprite: "bohemio", nombre: "El Bohemio Independiente", texto: "Jefe de Barranco: jura que X e Y son independientes sin haber comprobado una sola celda." },
 ];
