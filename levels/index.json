@@ -106,8 +106,8 @@
       "icono": "📏",
       "seccion": "PC3",
       "seccionNota": "Estadística inferencial — y ahora visitando el mundo",
-      "retos": 13,
-      "duracion": "5 min",
+      "retos": 7,
+      "duracion": "3 min",
       "abierto": true,
       "mapa": "levels/level9.json",
       "preguntas": "questions/level9_questions.json"
