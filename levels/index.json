@@ -1,5 +1,5 @@
 {
-  "titulo": "Lima",
+  "titulo": "Lima, el Perú y el mundo",
   "descripcion": "Cada distrito es una clase de Estadística 2. Los ocho están abiertos para practicar en cualquier orden.",
   "niveles": [
     {
@@ -97,6 +97,20 @@
       "abierto": true,
       "mapa": "levels/level8.json",
       "preguntas": "questions/level8_questions.json"
+    },
+    {
+      "id": "level9",
+      "clase": "Clase 01",
+      "distrito": "París",
+      "titulo": "El metro que nadie midió entero",
+      "icono": "📏",
+      "seccion": "PC3",
+      "seccionNota": "Estadística inferencial — y ahora visitando el mundo",
+      "retos": 13,
+      "duracion": "5 min",
+      "abierto": true,
+      "mapa": "levels/level9.json",
+      "preguntas": "questions/level9_questions.json"
     }
   ]
 }

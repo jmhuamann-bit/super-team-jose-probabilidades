@@ -66,6 +66,14 @@ const TEMAS_MUSICA = {
     bajo:    ["A2",3,"E3",3,"A2",2,"D3",3,"A2",3,"E2",2,
               "A2",3,"C3",3,"E3",2,"A2",4,"E2",4],
   },
+  sena: { // París: valsecito de acordeón, ligero y con aire de vereda
+    tempo: 0.15, onda: "triangle",
+    melodia: ["A4",2,"C5",1,"E5",1,"D5",2,"C5",2,"B4",2,
+              "A4",2,"B4",1,"C5",1,"B4",2,"A4",2,"G#4",2,
+              "A4",2,"E5",1,"D5",1,"C5",2,"B4",2,"A4",2,
+              "F4",2,"E4",2,"A4",4],
+    bajo:    ["A2",4,"E3",4,"A2",4,"D3",4,"E3",4,"A2",4,"E3",4,"A2",4],
+  },
   acantilado: { // Miraflores: atardecer en el malecón, amplio y de cierre
     tempo: 0.18, onda: "triangle",
     melodia: ["C5",2,"E5",2,"G5",4,"F5",2,"E5",2,"D5",4,

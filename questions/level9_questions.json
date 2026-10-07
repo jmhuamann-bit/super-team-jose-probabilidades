@@ -1,0 +1,203 @@
+{
+  "nivel": "level9",
+  "clase": "Clase 01 · PC3 — Estadística inferencial: estimadores e intervalos",
+  "fuente": "Apuntes de la 1ra clase de la PC3 — Estadística 2",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "e9-q1",
+      "nivel": "comprension",
+      "enunciado": "Te dan cuatro resultados y hay que decir cuál es parámetro y cuál estimador:\n\n(1) El promedio es de 30 años, concluido a partir de una MUESTRA.\n(2) La media del gasto es 40 soles, concluida a partir de la POBLACIÓN.\n(3) La temperatura tiene una moda de 25 °C, concluida a partir de una MUESTRA.\n(4) El tiempo promedio de viaje es 1,45 horas, concluido a partir de TODA la población limeña.\n\n¿Cuáles son parámetros?",
+      "opciones": [
+        "Los casos (2) y (4), porque usan datos de toda la población; los casos (1) y (3) son estimadores, porque salen de una muestra",
+        "Los casos (1) y (3), porque un parámetro siempre se saca de una muestra representativa",
+        "Los cuatro son parámetros: todos son medidas estadísticas calculadas con una fórmula",
+        "Solo el caso (4), porque la moda y el promedio simple nunca pueden ser parámetros"
+      ],
+      "correcta": 0,
+      "explicacion": "Lo único que define cuál es cuál es de DÓNDE salieron los datos: si es de toda la población, es parámetro; si es de una muestra, es estimador o estadístico."
+    },
+    {
+      "id": "e9-q2",
+      "nivel": "comprension",
+      "enunciado": "El SAR de la Universidad del Pacífico tiene la data de todos los estudiantes y calcula que la edad promedio es 21,77 años. Jhon Nieves, que es de 4to ciclo, le pregunta solo a los de su aula y le sale 20,5 años.\n\nSi un estudiante de 9no ciclo hiciera lo mismo con su aula, ¿qué pasaría, y qué dice eso de los dos números?",
+      "opciones": [
+        "Le saldría exactamente 20,5, porque el promedio muestral de una misma población siempre da lo mismo",
+        "Le saldría otro número distinto. El parámetro (21,77) es ÚNICO porque usa a toda la población; el estimador cambia con cada muestra que tomes",
+        "Le saldría 21,77, porque cualquier muestra bien tomada reproduce el parámetro",
+        "No se puede decir nada: con muestras distintas los resultados no son comparables entre sí"
+      ],
+      "correcta": 1,
+      "explicacion": "Esa es la diferencia de fondo: los valores paramétricos son únicos porque usan toda la población; los estimadores pueden cambiar un poco si se modifica la muestra."
+    },
+    {
+      "id": "e9-q3",
+      "nivel": "comprension",
+      "enunciado": "La clase empieza 6:30 pm y en promedio duran 3 horas. Jhon Nieves dice: «estimo que acaba 9:40 pm». La Patrona dice: «estimo que acaba entre las 9:00 y las 10:00 pm».\n\n¿Qué tipo de estimación hace cada uno, y cuál es más confiable?",
+      "opciones": [
+        "Los dos hacen estimación puntual; la de La Patrona solo está peor redactada",
+        "Jhon Nieves estima por intervalo y La Patrona puntualmente, y por eso la de él es más confiable",
+        "Jhon Nieves hace estimación PUNTUAL (un valor exacto) y La Patrona hace estimación POR INTERVALO (un rango); la de ella es más confiable, aunque no sea exacta",
+        "La de Jhon Nieves es más confiable justamente porque da un valor exacto y no se esconde en un rango"
+      ],
+      "correcta": 2,
+      "explicacion": "La puntual calcula un valor exacto pero es menos confiable; la de intervalo no da el valor exacto sino el rango donde probablemente esté el parámetro, y por eso da mejor resultado."
+    },
+    {
+      "id": "e9-q4",
+      "nivel": "comprension",
+      "enunciado": "Antes de usar una fórmula propia como estimador hay que comprobar que sea buena. El apunte lo resume con un truco para acordarse: «Ines es Eficiente con sugar».\n\n¿Cuáles son las cuatro condiciones que debe cumplir sí o sí?",
+      "opciones": [
+        "Insesgadez, exactitud, centralidad y simetría",
+        "Independencia, eficiencia, continuidad y suficiencia",
+        "Insesgadez, eficiencia, correlación y significancia",
+        "Insesgadez, eficiencia, consistencia y suficiencia"
+      ],
+      "correcta": 3,
+      "explicacion": "Las cuatro, en ese orden: INsesgadez, Eficiencia, Consistencia (su) y Suficiencia (gar). Y da igual si la muestra es con reemplazo o sin reemplazo."
+    },
+    {
+      "id": "e9-q5",
+      "nivel": "aplicacion",
+      "enunciado": "Tres sabios proponen estimar la edad promedio del reino. Se toma una muestra aleatoria simple y se asume E(xi) = μ para cada dato:\n\nSabio Totalista: x̄ = Σx/n\nSabio Rápido: x̄ = (Xmáx + Xmín)/2\nSabio Viejo: x̄ = (2·Xcentro + Xmáx)/2\n\nAplicando la propiedad distributiva del valor esperado, ¿cuál de los tres es SESGADO y hacia dónde?",
+      "opciones": [
+        "El Sabio Viejo: E = (2μ + μ)/2 = 1,5μ, que es distinto de μ. Su sesgo es 0,5μ, positivo, o sea hacia arriba",
+        "El Sabio Rápido: como usa solo dos datos, su esperanza no puede dar μ",
+        "El Sabio Totalista: al dividir entre n se le escapa parte de la información y queda sesgado hacia abajo",
+        "Ninguno es sesgado: los tres son promedios, y todo promedio es insesgado por construcción"
+      ],
+      "correcta": 0,
+      "explicacion": "Totalista: (1/n)·n·μ = μ. Rápido: (μ + μ)/2 = μ. Los dos insesgados. El Viejo da 1,5μ, y como el sesgo es E(estimador) − parámetro = 0,5μ > 0, es sesgo hacia arriba."
+    },
+    {
+      "id": "e9-q6",
+      "nivel": "aplicacion",
+      "enunciado": "Con los mismos tres estimadores, una muestra de n = 50 y Var(xi) = σ², se aplica la propiedad distributiva de la varianza (acuérdate de que la constante sale al cuadrado):\n\nTotalista: Var = σ²/50 = 0,02σ²\nRápido: Var = (σ² + σ²)/4 = 0,5σ²\nViejo: Var = (4σ² + σ²)/4 = 1,25σ²\n\n¿Cuál es el más eficiente y por qué?",
+      "opciones": [
+        "El Sabio Viejo, porque 1,25 es el número más grande y eso significa más información aprovechada",
+        "El Sabio Totalista, porque tiene la MENOR varianza (0,02σ²): es 25 veces menos variable que el Rápido, así que es más probable que caiga cerca del verdadero parámetro",
+        "El Sabio Rápido, porque queda justo en el medio de los tres y eso lo hace el más equilibrado",
+        "Los tres son igual de eficientes: la eficiencia no se mide con la varianza sino con el sesgo"
+      ],
+      "correcta": 1,
+      "explicacion": "Un buen estimador debe tener la menor varianza posible. El que menos varía es el que más probablemente produce una estimación cercana al verdadero valor del parámetro."
+    },
+    {
+      "id": "e9-q7",
+      "nivel": "comprension",
+      "enunciado": "La eficiencia viene en dos sabores y en el examen los preguntan por separado.\n\n¿Cuál es la diferencia entre eficiencia RELATIVA y eficiencia ABSOLUTA?",
+      "opciones": [
+        "La relativa se mide con el teorema de Fisher-Neyman y la absoluta con la desigualdad de Chebyshev",
+        "La relativa mide el sesgo entre dos estimadores y la absoluta mide el sesgo de uno solo contra el parámetro",
+        "La RELATIVA compara dos estimadores y se queda con el menos variable. La ABSOLUTA compara la varianza del estimador contra la cota mínima del teorema de Rao-Cramer: si la iguala, tiene eficiencia absoluta",
+        "La relativa solo se puede usar con muestras con reemplazo y la absoluta solo con muestras sin reemplazo"
+      ],
+      "correcta": 2,
+      "explicacion": "Relativa es comparar dos y elegir. Absoluta es compararse contra la cota mínima de Rao-Cramer: si la varianza es igual a la cota, hay eficiencia absoluta; si es mayor, no."
+    },
+    {
+      "id": "e9-q8",
+      "nivel": "aplicacion",
+      "enunciado": "El promedio real de la edad de TODA la población es 47,38 años. Se prueban los tres estimadores con dos muestras:\n\nCon 5 datos (43, 45, 47, 49, 52): Totalista 47,2 · Rápido 47,5 · Viejo 73\nCon 9 datos (43, 45, 46, 46, 47, 49, 49, 49, 52): Totalista 47,33 · Rápido 47,5 · Viejo 73\n\n¿Cuál es CONSISTENTE?",
+      "opciones": [
+        "El Rápido, porque con 5 datos ya estaba a 0,12 del valor real y el Totalista estaba a 0,18",
+        "Los tres, porque ninguno se alejó del valor real al pasar de 5 a 9 datos",
+        "Ninguno: para hablar de consistencia habría que llegar a una muestra del tamaño de toda la población",
+        "El Totalista, porque es el único que se ACERCÓ al valor real al crecer la muestra (de 47,2 a 47,33); el Rápido y el Viejo se quedaron clavados en 47,5 y 73"
+      ],
+      "correcta": 3,
+      "explicacion": "Consistencia es mejorar cuando n crece. Ojo con la trampa: con 5 datos el Rápido estaba más cerca, pero no se movió al agrandar la muestra, y eso es lo que se evalúa."
+    },
+    {
+      "id": "e9-q9",
+      "nivel": "comprension",
+      "enunciado": "Queda la cuarta propiedad. El Sabio Rápido usa solo el dato más alto y el más bajo; el Sabio Viejo usa el del centro y el más alto; el Sabio Totalista los suma todos.\n\n¿Qué es la SUFICIENCIA y cuál de los tres la cumple?",
+      "opciones": [
+        "Un estimador es suficiente si usa TODA la información de la muestra, sin perder datos útiles: el único que la cumple es el Totalista. En casos avanzados se demuestra con el teorema de factorización de Fisher-Neyman",
+        "Un estimador es suficiente si le alcanza con pocos datos para funcionar: la cumplen el Rápido y el Viejo, que usan dos cada uno",
+        "Un estimador es suficiente si su varianza alcanza la cota de Rao-Cramer: la cumple solo el Totalista",
+        "Un estimador es suficiente si su media coincide con el parámetro: la cumplen el Totalista y el Rápido"
+      ],
+      "correcta": 0,
+      "explicacion": "Suficiencia es aprovechar toda la muestra. El Rápido bota todos los datos del medio y el Viejo casi todos; el Totalista es el único que no desperdicia ninguno."
+    },
+    {
+      "id": "e9-q10",
+      "nivel": "comprension",
+      "enunciado": "Pregunta de examen final. Marque la afirmación correcta:\n\n(a) Todos los estimadores insesgados son consistentes.\n(b) Las otras afirmaciones son falsas.\n(c) Todos los estimadores sesgados son inconsistentes.\n(d) Todos los estimadores consistentes son suficientes.",
+      "opciones": [
+        "La (a): si la media del estimador da en el parámetro, al crecer la muestra necesariamente se acerca",
+        "La (b): las otras tres son falsas, porque cada propiedad funciona de forma INDEPENDIENTE y que se cumpla una no obliga a que se cumpla otra",
+        "La (c): un estimador con sesgo nunca puede converger al parámetro por más que crezca la muestra",
+        "La (d): usar toda la información de la muestra es consecuencia directa de ser consistente"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la reflexión del apunte y cae seguido: las cuatro propiedades son independientes entre sí. El Sabio Rápido mismo es insesgado y sin embargo no es consistente."
+    },
+    {
+      "id": "e9-q11",
+      "nivel": "comprension",
+      "enunciado": "Otra de examen. Marque la verdadera:\n\n(a) Un estimador eficiente siempre es sesgado y consistente.\n(b) El sesgo es igual a (b̂ − E(b̂)), donde b̂ es el estimador.\n(c) Un estimador insesgado puede no ser eficiente bajo el criterio de Rao-Cramer.\n(d) Las otras afirmaciones son falsas.",
+      "opciones": [
+        "La (a), porque la eficiencia se consigue siempre a costa de introducir algo de sesgo",
+        "La (b), que es la definición de sesgo que se usa en toda la inferencia",
+        "La (c): se puede ser insesgado y aun así tener una varianza por encima de la cota mínima de Rao-Cramer. La (b) está invertida: el sesgo es E(estimador) − parámetro",
+        "La (d), porque ninguna de las tres primeras resiste un contraejemplo"
+      ],
+      "correcta": 2,
+      "explicacion": "La (b) es la trampa: el sesgo se arma como estimador menos parámetro, o sea E(θ̂) − θ, no estimador menos su propia esperanza, que daría siempre cero."
+    },
+    {
+      "id": "e9-q12",
+      "nivel": "aplicacion",
+      "enunciado": "Vas a armar un intervalo de confianza para la media con σ² = 16 y una muestra de n = 64. Hay dos versiones del mismo problema: en una te dicen que la población es de N = 400 personas y en la otra no te dicen nada de la población.\n\n¿Qué cambia?",
+      "opciones": [
+        "Nada: el factor de corrección por población finita solo afecta a las proporciones, no a las medias",
+        "Que sin N el problema no se puede resolver, porque toda varianza de la media necesita el tamaño poblacional",
+        "Que con N hay que cambiar la Z por una t de Student, y sin N se usa Z",
+        "Si te dan N es MSR y hay que multiplicar por el factor (N − n)/(N − 1) = 336/399 = 0,8421, así que la varianza baja de 0,25 a 0,2105 y el intervalo sale más angosto. Si no te dan N, es MCR y se queda en 16/64 = 0,25"
+      ],
+      "correcta": 3,
+      "explicacion": "El dato curioso del apunte: si te entregan la población es MSR, y si no te la dan es MCR automáticamente. Lo único que se añade es el factor de corrección por población finita."
+    },
+    {
+      "id": "e9-q13",
+      "nivel": "aplicacion",
+      "enunciado": "Una universidad quiere estimar la media de horas que sus estudiantes dedican al estudio por semana. Se sabe que la varianza poblacional es σ² = 16 horas². Se toma una muestra aleatoria de 64 estudiantes y la media muestral sale 20 horas. Se pide el intervalo de confianza al 95% para la media poblacional, asumiendo MCR. Usa Z = 1,96.\n\n¿Cuál es el intervalo?",
+      "opciones": [
+        "[19,02 ; 20,98], porque σ de la media = √(16/64) = 0,5 y el margen es 1,96 × 0,5 = 0,98",
+        "[12,16 ; 27,84], porque el margen se calcula con la desviación poblacional completa: 1,96 × 4",
+        "[19,75 ; 20,25], porque la varianza de la media es 16/64 = 0,25 y ese 0,25 ya es el margen",
+        "[16 ; 24], porque al 95% se toman dos desviaciones estándar poblacionales a cada lado de la media"
+      ],
+      "correcta": 0,
+      "explicacion": "Como σ² es CONOCIDA se usa Z. Primero σ de la media = √(σ²/n) = √(16/64) = 0,5; después el margen = Z × 0,5 = 0,98; y recién ahí 20 ± 0,98."
+    },
+    {
+      "id": "e9-q14",
+      "nivel": "aplicacion",
+      "enunciado": "Un hospital encuesta a 1 000 pacientes sobre un protocolo nuevo y 780 dicen estar satisfechos. Se pide el intervalo al 90% para la proporción poblacional, con MCR y Z = 1,645. Ya calculado: p = 0,78 y la desviación de p es √(0,78 × 0,22 / 1 000) = 0,0131.\n\n¿Cuál es el intervalo de la proporción, y cuál es el de la CANTIDAD de pacientes satisfechos?",
+      "opciones": [
+        "Proporción [0,7585 ; 0,8015] y cantidad [0,7585 ; 0,8015] también, porque la cantidad se lee directo del porcentaje",
+        "Proporción [0,7585 ; 0,8015]; y para la cantidad se multiplica el intervalo por N = 1 000, o sea entre 758 y 802 pacientes satisfechos",
+        "Proporción [0,7669 ; 0,7931] y cantidad entre 767 y 793 pacientes, usando Z = 1,96 que es el estándar",
+        "Proporción [0,7538 ; 0,8062]; la cantidad no se puede estimar porque un intervalo de proporciones no se transforma"
+      ],
+      "correcta": 1,
+      "explicacion": "Margen = 1,645 × 0,0131 = 0,0215, y 0,78 ± 0,0215. La transformación a cantidad es la del apunte: Q = π × N, así que basta con multiplicar los dos límites por N."
+    },
+    {
+      "id": "e9-q15",
+      "nivel": "comprension",
+      "enunciado": "Entregas el intervalo [19,02 ; 20,98] al 95% de confianza y te preguntan qué significa exactamente ese 95%.\n\n¿Cuál es la lectura correcta?",
+      "opciones": [
+        "Que el 95% de los estudiantes de la muestra estudia entre 19,02 y 20,98 horas por semana",
+        "Que hay 95% de probabilidad de que la media de la próxima muestra caiga dentro de ese intervalo",
+        "Que con 95% de confianza se afirma que el VERDADERO valor de la media poblacional está entre 19,02 y 20,98 horas. Nada asegura al 100% que esté adentro: queda un riesgo α del 5%",
+        "Que el intervalo contiene con total seguridad al parámetro, y el 95% solo describe qué tan ancho se decidió hacerlo"
+      ],
+      "correcta": 2,
+      "explicacion": "El nivel de confianza es 1 − α, y α es el riesgo. Por eso el intervalo podría no contener al parámetro: por eso mismo te definen el nivel de confianza antes de calcular nada."
+    }
+  ]
+}

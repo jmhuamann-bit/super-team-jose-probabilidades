@@ -873,6 +873,141 @@ const BOHEMIO = [  // jefe de Barranco: el bohemio del Puente de los Suspiros (E
   "..kkkkk...kkkkk.....",
 ];
 const P_BOHEMIO = { k: "#241a2e", c: "#f7d9bd", n: "#5b4a7a", r: "#e0562f" };
+/* =========================================================
+   PARÍS — el mismo muelle del Sena que en Economía I, pero acá los
+   bichos son de estadística inferencial, no de panadería.
+   El fondo es piedra clara, zinc gris, agua verde y vereda arena, así
+   que todo va con CONTORNO OSCURO y en tono medio: más oscuro que la
+   piedra y más claro que el río.
+   ========================================================= */
+const METROPATRON = [  // el mètre étalon de la pared: confunde el parámetro con el estimador (18 × 10)
+  "..................",
+  ".kkkkkkkkkkkkkkkk.",
+  ".kmmmmmmmmmmmmmmk.",
+  ".kmgmmmmmmmmmmgmk.",
+  ".kmggggggggggggmk.",
+  ".kmgmgmgmgmgmgmmk.",
+  ".kmmmmmmmmmmmmmmk.",
+  ".kmmmmmmmmmmmmmmk.",
+  ".kkkkkkkkkkkkkkkk.",
+  "..................",
+];
+const P_METROPATRON = { k: "#2e3340", m: "#e8e4d8", g: "#c9962e" };
+
+const TEODOLITO = [    // el círculo de Méchain: su promedio nunca da en el parámetro (16 × 16)
+  "................",
+  "......bbbb......",
+  ".....bbbbbb.....",
+  "....bb....bb....",
+  "....b......b....",
+  "....b......b....",
+  "....bb....bb....",
+  ".....bbbbbb.....",
+  "......bbbb......",
+  ".......tt.......",
+  "......tttt......",
+  ".....t.tt.t.....",
+  "....t..tt..t....",
+  "...t...tt...t...",
+  "..t....tt....t..",
+  "................",
+];
+const P_TEODOLITO = { b: "#c9962e", t: "#3a2d22" };
+
+const VELETA = [       // el gallo de la veleta: gira con cada muestra y por eso desconfía (16 × 16)
+  "................",
+  "..........rr....",
+  ".........rrrr...",
+  "........kkkkkk..",
+  "........kkkkkg..",
+  "....kkkkkkkkk...",
+  "...kkkkkkkkkk...",
+  "..kkkkkkkkkkk...",
+  "..kkkkkkkkk.....",
+  "...kkkkkk.......",
+  "....kkk.........",
+  "......k.........",
+  "...ggggggg......",
+  "......k.........",
+  "......k.........",
+  "................",
+];
+const P_VELETA = { k: "#3b4048", r: "#c2264a", g: "#c9962e" };
+
+const RELOJ = [        // el reloj de la Conciergerie: exige la hora exacta y no acepta un rango (16 × 14)
+  "................",
+  ".....gggggg.....",
+  "...ggbbbbbbgg...",
+  "..gbbbbwbbbbbg..",
+  ".gbbbbbwbbbbbbg.",
+  ".gbbbbbwbbbbbbg.",
+  ".gbbbbbwbbbbbbg.",
+  ".gbbbbbwwwwwbbg.",
+  ".gbbbbbbbbbbbbg.",
+  ".gbbbbbbbbbbbbg.",
+  ".gbbbbbbbbbbbbg.",
+  "..gbbbbbbbbbbg..",
+  "...ggbbbbbbgg...",
+  ".....gggggg.....",
+];
+const P_RELOJ = { g: "#e8c15a", b: "#1f3a6e", w: "#f2efe4" };
+
+const CENSISTA = [     // jefe: el que no se fía de ninguna muestra y quiere medir a TODA la población (18 × 17)
+  ".....kkkkkkkk.....",
+  "....kkkkkkkkkk....",
+  "...kk..kkkk..kk...",
+  ".....ssssssss.....",
+  ".....sksskss......",
+  ".....ssmmss.......",
+  "......ssss........",
+  "....ccccccccc.....",
+  "...cccccccccccc...",
+  "..scccccccccccs...",
+  "..sccgggggggccs...",
+  "...cccccccccccc...",
+  "....ccccccccc.....",
+  "....cccc..cccc....",
+  "....jjjj..jjjj....",
+  "...kkkkk..kkkkk...",
+  "..................",
+];
+const P_CENSISTA = { k: "#1c2033", s: "#d9a273", c: "#28304a", g: "#e8c15a", j: "#3b3630", m: "#8a3a2e" };
+
+const GARGOLA = [  // la gárgola de la catedral: jura que siempre hay que producir en el Qmáx (18 × 13)
+  "..................",
+  "...dd........dd...",
+  "..dggd......dggd..",
+  "..dgggd....dgggd..",
+  "...dggggggggggd...",
+  "...dggyggggyggd...",
+  "...dggggggggggd...",
+  "....dgkkkkkkgd....",
+  "....dggggggggd....",
+  ".....dggggggd.....",
+  "....dd......dd....",
+  "...dd........dd...",
+  "..................",
+];
+const P_GARGOLA = { g: "#9a9382", d: "#5f5a4c", y: "#f0a81e", k: "#2e2a23" };
+
+const METRO = [    // el vagón del Métro de París, con su librea verde y su rótulo esmaltado (32 × 14)
+  "...gggggggggggggggggggggggggg...",
+  "..gggggggggggggggggggggggggggg..",
+  ".gggwwwwwwwwwwwwwwwwwwwwwwwwggg.",
+  ".ggwbbbbwwwbbbbwwwbbbbwwwbbbbgg.",
+  ".ggwbbbbwwwbbbbwwwbbbbwwwbbbbgg.",
+  ".ggwbbbbwwwbbbbwwwbbbbwwwbbbbgg.",
+  ".ggwwwwwwwwwwwwwwwwwwwwwwwwwwgg.",
+  ".gggggggggggggggggggggggggggggg.",
+  ".ggggyyyyyggggggggggggyyyyygggg.",
+  ".gggggggggggggggggggggggggggggg.",
+  "..kkkkkkkkkkkkkkkkkkkkkkkkkkkk..",
+  "...kkkkkkkkkkkkkkkkkkkkkkkkkk...",
+  "....kk..kk............kk..kk....",
+  "................................",
+];
+const P_METRO = { g: "#2f6b4a", w: "#f2efe4", b: "#44586a", y: "#e8c15a", k: "#2a2620" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -928,6 +1063,13 @@ const DEFINICIONES = {
   aerosol:      [AEROSOL, P_AEROSOL],
   cajon:        [CAJON, P_CAJON],
   bohemio:      [BOHEMIO, P_BOHEMIO],
+  metropatron:  [METROPATRON, P_METROPATRON],
+  teodolito:    [TEODOLITO, P_TEODOLITO],
+  veleta:       [VELETA, P_VELETA],
+  reloj:        [RELOJ, P_RELOJ],
+  gargola:      [GARGOLA, P_GARGOLA],
+  censista:     [CENSISTA, P_CENSISTA],
+  metro:        [METRO, P_METRO],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)
