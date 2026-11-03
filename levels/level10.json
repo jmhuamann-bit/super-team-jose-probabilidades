@@ -1,0 +1,41 @@
+{
+  "id": "level10",
+  "distrito": "Corea del Sur",
+  "clase": "Clase 01 · PC4",
+  "titulo": "El país donde se encuesta todo y nada sale normal",
+  "tema": "seul",
+  "musica": "seul",
+  "vehiculo": "ktx",
+  "intro": "Arranca la PC4 con la ESTADÍSTICA NO PARAMÉTRICA. Toca Corea del Sur porque ahí se encuesta todo: qué grupo de K-pop prefieres, qué plataforma ves, de qué edad eres. Son datos de CATEGORÍAS, que no siguen ninguna campana, y para eso está la no paramétrica: sirve para cualquier distribución y para datos cualitativos. Hay tres pruebas con la misma receta de siete pasos: K CATEGORÍAS (si una variable está en cierta proporción, como 3:2:1), HOMOGENEIDAD (si una variable se comporta igual en varias poblaciones) e INDEPENDENCIA (si dos variables tienen relación). En las tres se compara lo OBSERVADO con lo ESPERADO usando el chi-cuadrado, siempre unilateral a la derecha.",
+  "repaso": [
+    "PARAMÉTRICA VS NO PARAMÉTRICA: la paramétrica estima parámetros (μ, π) y pide datos cuantitativos con distribución normal o aproximada; es más EXACTA. La no paramétrica sirve para CUALQUIER distribución y para datos cuantitativos y cualitativos, pero es aproximada. Si los datos son normales, se puede usar cualquiera y se sugiere la paramétrica.",
+    "REQUISITOS GENERALES de la inferencia, para las dos: muestra aleatoria y poblaciones independientes.",
+    "LAS TRES PRUEBAS: K CATEGORÍAS compara una variable contra una proporción (por ejemplo 3:2:1). HOMOGENEIDAD: una variable en varias poblaciones o estratos (la edad de los contagiados en tres distritos). INDEPENDENCIA: dos variables en una sola muestra (la gravedad de la enfermedad y la edad).",
+    "LAS HIPÓTESIS: en homogeneidad, Hp dice que la variable se comporta de manera similar en todas las poblaciones y Ha que en al menos una es diferente. En independencia, Hp dice que las variables son independientes y Ha que NO lo son.",
+    "LA RECETA DE SIETE PASOS: 1) hipótesis, 2) nivel de significación (α = 0,05 si no dicen otra cosa, unilateral a la derecha), 3) valores esperados, 4) estadístico de prueba, 5) criterio de decisión, 6) calcular el chi-cuadrado, 7) decisión y conclusión.",
+    "LOS ESPERADOS EN UNA TABLA: E = (total de la fila × total de la columna) / total general. Ejemplo: 204 hombres y 160 que prefieren A, de 400, dan E = 204·160/400 = 81,6.",
+    "LOS ESPERADOS EN K CATEGORÍAS: se suman las partes de la proporción y se reparte el total. Con 3:2:1 son 6 partes: con 1350 casos, 1350·3/6 = 675, 1350·2/6 = 450 y 1350·1/6 = 225.",
+    "LOS GRADOS DE LIBERTAD: en una tabla, GL = (filas − 1)(columnas − 1); una tabla de 3 × 3 tiene 4. En K categorías, GL = K − 1.",
+    "EL ESTADÍSTICO: χ² = ΣΣ (O − E)²/E, que solo es restar lo observado con lo esperado. Si n < 50 o GL = 1 se usa la corrección: χ² = ΣΣ (|O − E| − 0,5)²/E.",
+    "EL CRITERIO: la χ² es asimétrica a la derecha y la región de rechazo está a la derecha. Con α = 0,05 y GL = 2, el valor crítico es 5,991: si el χ² calculado es ≤ 5,991 se acepta Hp; si es mayor, se rechaza.",
+    "EL VALOR P: si P < α se RECHAZA Hp; si P ≥ α se ACEPTA. En Minitab el χ² calculado es el de Pearson.",
+    "EL COEFICIENTE DE CONTINGENCIA, solo en independencia: CC = √(χ² / (n + χ²)). Con χ² = 80,661 y n = 1350, CC = 0,24: correlación baja (entre 0,2 y 0,4)."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                   AA                                                                                                               ",
+    "                      L                    V                                                                     G                                                                  ",
+    "                                                                 oo  oo                                                                                                             ",
+    "                                                                 ======                                                                                                             ",
+    "      oo?oo          oooo               oo                                      ooooooooooo                   oo          ooooo                       L  1   oooooooo               ",
+    "                    ======              ======                                                         ooooo  ======                       oooo             ==========              ",
+    "                                     ooooo                     =====                                                                                                                ",
+    "  P           C             E                       E     C T               E     X   E X       C                   E       X           C         E                     B       M   ",
+    "######################################   ###############################################################   #################################  ######################################",
+    "######################################   ###############################################################   #################################  ######################################",
+    "######################################   ###############################################################   #################################  ######################################"
+  ]
+}

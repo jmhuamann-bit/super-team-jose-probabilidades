@@ -111,6 +111,20 @@
       "abierto": true,
       "mapa": "levels/level9.json",
       "preguntas": "questions/level9_questions.json"
+    },
+    {
+      "id": "level10",
+      "clase": "Clase 01",
+      "distrito": "Corea del Sur",
+      "titulo": "El país donde se encuesta todo y nada sale normal",
+      "icono": "🎤",
+      "seccion": "PC4",
+      "seccionNota": "Estadística no paramétrica — y seguimos dando la vuelta al mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level10.json",
+      "preguntas": "questions/level10_questions.json"
     }
   ]
 }

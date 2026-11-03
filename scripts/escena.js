@@ -187,6 +187,13 @@ const FICHAS = [
   { sprite: "gargola", nombre: "La Gárgola de los Extremos", texto: "Desde lo alto solo ve al más alto y al más bajo, y bota todos los datos del medio: desperdicia muestra, o sea no es suficiente." },
   { sprite: "censista", nombre: "El Censista del Meridiano", texto: "Jefe de París: no se fía de ninguna muestra y quiere medir a toda la población, aunque sea imposible." },
   { sprite: "bohemio", nombre: "El Bohemio Independiente", texto: "Jefe de Barranco: jura que X e Y son independientes sin haber comprobado una sola celda." },
+  { sprite: "ginseng", nombre: "La Raíz que Solo Crece en Suelo Normal", texto: "Corea del Sur: cree que la no paramétrica pide datos normales. Es al revés: la no paramétrica sirve para cualquier distribución." },
+  { sprite: "tambor", nombre: "El Tambor que No Distingue las Tres Pruebas", texto: "Una variable en varias poblaciones es homogeneidad; dos variables en una muestra, independencia; una variable contra una proporción, K categorías." },
+  { sprite: "bandeja", nombre: "La Bandeja que No Reparte los Esperados", texto: "El esperado es total de la fila por total de la columna entre el total general: 204 × 160 / 400 = 81,6." },
+  { sprite: "poste", nombre: "El Poste que Se Olvida de Restar Uno", texto: "En una tabla, GL = (filas − 1)(columnas − 1). En K categorías, GL = K − 1." },
+  { sprite: "grua", nombre: "La Grúa que Lee el Valor P al Revés", texto: "Si P < α se rechaza Hp; si P ≥ α se acepta. Un valor P chiquito es evidencia CONTRA la Hp." },
+  { sprite: "engranaje", nombre: "El Engranaje que No Gira en Proporción", texto: "Para probar 3:2:1 se suman las partes, 6, y se reparte el total: 675, 450 y 225 de 1350." },
+  { sprite: "chaebol", nombre: "El Gerente de la Encuesta Final", texto: "Jefe de Corea del Sur: pide calcular un χ², saber cuándo corregirlo y medir la relación con el coeficiente de contingencia." },
 ];
 
 export function galeriaPersonajes(contenedor) {

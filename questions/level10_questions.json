@@ -1,0 +1,125 @@
+{
+  "nivel": "level10",
+  "clase": "Clase 01 · PC4 — Pruebas de hipótesis no paramétricas",
+  "fuente": "Apuntes de la 1era clase y del examen final — Prueba no paramétrica (Estadística 2)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "e10-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "Comente: «La estadística no paramétrica se aplica únicamente cuando los datos siguen una distribución normal».",
+      "opciones": [
+        "Verdadero: sin normalidad no se puede hacer ninguna prueba de hipótesis",
+        "Verdadero, y además es más exacta que la paramétrica",
+        "Falso: la no paramétrica sirve para cualquier distribución y para datos cualitativos; la que pide normalidad es la paramétrica",
+        "Falso: la no paramétrica solo sirve para datos cuantitativos"
+      ],
+      "correcta": 2,
+      "explicacion": "Es al revés: la PARAMÉTRICA es la que pide datos cuantitativos con distribución normal o aproximada, y por eso es más exacta. La NO paramétrica entra a todo: cualquier distribución, datos cuantitativos y cualitativos. Su desventaja es que es aproximada. Si los datos son normales, se sugiere la paramétrica."
+    },
+    {
+      "id": "e10-q2",
+      "nivel": "comprension",
+      "enunciado": "En tres distritos se tomó, por separado, una muestra aleatoria de contagiados de COVID y se anotó su grupo de edad.\n\nPara saber si la afectación por edad es igual en los tres distritos, ¿qué prueba toca?",
+      "opciones": [
+        "Independencia, porque hay dos variables: distrito y edad",
+        "Homogeneidad: es UNA variable (la edad) comparada en VARIAS poblaciones (los distritos)",
+        "K categorías, porque la edad tiene tres categorías",
+        "Una prueba paramétrica de la media, porque la edad es un número"
+      ],
+      "correcta": 1,
+      "explicacion": "Cada distrito es una población con su propia muestra y en todas se mide la misma variable: la edad. Una variable en varias poblaciones o estratos es HOMOGENEIDAD. Independencia es cuando en UNA sola muestra se cruzan dos variables (por ejemplo, gravedad y edad). K categorías es una sola variable contra una proporción como 3:2:1."
+    },
+    {
+      "id": "e10-q3",
+      "nivel": "aplicacion",
+      "enunciado": "En una tabla de 400 personas, 204 son hombres y 160 prefieren el establecimiento A. De hecho, 120 hombres prefieren A.\n\n¿Cuál es el valor ESPERADO de hombres que prefieren A?",
+      "opciones": [
+        "81,6, que sale de 204 × 160 / 400",
+        "120, que es lo que se observó",
+        "102, la mitad de los hombres",
+        "40,8, que sale de 204 / 400 × 80"
+      ],
+      "correcta": 0,
+      "explicacion": "La fórmula madre: E = total de la fila × total de la columna / total general = 160 × 204 / 400 = 81,6. El 120 es el valor OBSERVADO. La prueba consiste justamente en comparar ese 120 con el 81,6 que se esperaría si no hubiera relación."
+    },
+    {
+      "id": "e10-q4",
+      "nivel": "comprension",
+      "enunciado": "Una tabla de doble entrada tiene 3 filas y 3 columnas (sin contar los totales).\n\n¿Cuántos grados de libertad tiene el chi-cuadrado?",
+      "opciones": [
+        "9, porque hay nueve celdas",
+        "6, sumando filas y columnas",
+        "2, porque son tres categorías menos una",
+        "4, porque GL = (3 − 1)(3 − 1)"
+      ],
+      "correcta": 3,
+      "explicacion": "En homogeneidad e independencia, GL = (filas − 1)(columnas − 1) = 2 × 2 = 4. El 2 sería el de una prueba de K categorías con tres categorías, donde GL = K − 1. Las celdas o los totales no se cuentan."
+    },
+    {
+      "id": "e10-q5",
+      "nivel": "aplicacion",
+      "enunciado": "Minitab reporta para una prueba de independencia: chi-cuadrada de Pearson = 80,661, GL = 4, valor P = 0,000. Se trabaja con α = 0,01.\n\n¿Qué se decide?",
+      "opciones": [
+        "Se acepta Hp, porque el valor P es muy chico",
+        "Se rechaza Hp: como P = 0,000 < 0,01, las variables NO son independientes",
+        "No se puede decidir sin el valor crítico de la tabla",
+        "Se acepta Hp, porque 80,661 es mayor que el α"
+      ],
+      "correcta": 1,
+      "explicacion": "La regla universal del valor P: si P < α, se RECHAZA Hp; si P ≥ α, se acepta. Aquí 0,000 < 0,01, así que se rechaza que las variables sean independientes: sí guardan relación. El valor P ya resume la comparación con la región de rechazo."
+    },
+    {
+      "id": "e10-q6",
+      "nivel": "aplicacion",
+      "enunciado": "Se quiere probar si la gravedad del COVID (leve, moderado y grave) está en la relación 3:2:1. Hay 1350 casos en total.\n\n¿Cuáles son los valores esperados?",
+      "opciones": [
+        "450, 450 y 450, repartiendo en partes iguales",
+        "405, 270 y 135, usando el 30%, 20% y 10%",
+        "675, 450 y 225: la relación suma 6 partes, así que 1350·3/6, 1350·2/6 y 1350·1/6",
+        "639, 481 y 230, que son los casos de cada grupo"
+      ],
+      "correcta": 2,
+      "explicacion": "Es una prueba de K categorías. El truco: se suman las partes, 3 + 2 + 1 = 6, y cada grupo se lleva su parte del total: 1350 × 3/6 = 675, 1350 × 2/6 = 450 y 1350 × 1/6 = 225. Los 639, 481 y 230 son los OBSERVADOS."
+    },
+    {
+      "id": "e10-q7",
+      "nivel": "aplicacion",
+      "enunciado": "Primera pregunta del gerente. Con esos datos se observaron 639 leves, 481 moderados y 230 graves, contra 675, 450 y 225 esperados. Con α = 0,05 y GL = 2, el valor crítico es 5,991.\n\n¿Qué se concluye?",
+      "opciones": [
+        "El χ² es 4,17 ≤ 5,991: se acepta Hp, la gravedad sí está en relación 3:2:1",
+        "El χ² es 4,17 > 0,05: se rechaza Hp",
+        "El χ² es 72: se rechaza Hp, la relación no es 3:2:1",
+        "El χ² es 0: los datos coinciden exactamente con lo esperado"
+      ],
+      "correcta": 0,
+      "explicacion": "χ² = Σ(O − E)²/E = (639 − 675)²/675 + (481 − 450)²/450 + (230 − 225)²/225 = 1,92 + 2,14 + 0,11 = 4,17. Como 4,17 ≤ 5,991, cae en la región de aceptación: se acepta Hp. El χ² se compara con el valor crítico, no con el α."
+    },
+    {
+      "id": "e10-q8",
+      "nivel": "comprension",
+      "enunciado": "Segunda pregunta. Una tabla de 2 × 2 tiene apenas 40 datos.\n\n¿Cómo se calcula el chi-cuadrado?",
+      "opciones": [
+        "Igual que siempre, ΣΣ (O − E)²/E, porque la fórmula no cambia",
+        "No se puede: con menos de 50 datos no hay prueba no paramétrica",
+        "Con la media y la desviación estándar, porque es una muestra chica",
+        "Con la corrección: ΣΣ (|O − E| − 0,5)²/E, porque n < 50 y además GL = 1"
+      ],
+      "correcta": 3,
+      "explicacion": "La fórmula común, ΣΣ (O − E)²/E, se usa si n ≥ 50 y GL > 1. Si n < 50 o GL = 1 se usa el caso raro, con la corrección: ΣΣ (|O − E| − 0,5)²/E. Una tabla de 2 × 2 tiene GL = (2 − 1)(2 − 1) = 1, y encima aquí n = 40: toca corregir por las dos razones."
+    },
+    {
+      "id": "e10-q9",
+      "nivel": "aplicacion",
+      "enunciado": "Tercera pregunta. En la prueba de independencia entre gravedad y edad salió χ² = 80,661 con n = 1350.\n\n¿Cuánto vale el coeficiente de contingencia y qué dice?",
+      "opciones": [
+        "0,06: correlación nula",
+        "0,24: con CC = √(80,661 / (1350 + 80,661)), es una correlación baja",
+        "0,94: correlación muy alta, porque el χ² es grande",
+        "80,661 / 1350 = 0,06: correlación muy baja"
+      ],
+      "correcta": 1,
+      "explicacion": "CC = √(χ² / (n + χ²)) = √(80,661 / 1430,661) = √0,0564 = 0,24. Entre 0,2 y 0,4 es una correlación BAJA. Ojo: el 0,06 es lo que queda dentro de la raíz; falta sacarla. Y este coeficiente solo se calcula en la prueba de independencia."
+    }
+  ]
+}

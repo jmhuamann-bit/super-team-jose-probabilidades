@@ -66,6 +66,14 @@ const TEMAS_MUSICA = {
     bajo:    ["A2",3,"E3",3,"A2",2,"D3",3,"A2",3,"E2",2,
               "A2",3,"C3",3,"E3",2,"A2",4,"E2",4],
   },
+  seul: { // Corea del Sur: pentatónica de gayageum, que arranca lenta y se acelera
+    tempo: 0.21, onda: "triangle",
+    melodia: ["D4",4,"F4",2,"G4",2,"A4",4,"C5",2,"A4",2,
+              "G4",4,"F4",2,"D4",2,"C4",4,"D4",4,
+              "A4",2,"C5",2,"D5",4,"C5",2,"A4",2,"G4",4,
+              "F4",2,"G4",2,"A4",4,"D4",4],
+    bajo:    ["D2",8,"A1",8,"C2",8,"G2",4,"D2",4],
+  },
   sena: { // París: valsecito de acordeón, ligero y con aire de vereda
     tempo: 0.15, onda: "triangle",
     melodia: ["A4",2,"C5",1,"E5",1,"D5",2,"C5",2,"B4",2,
