@@ -1,0 +1,125 @@
+{
+  "nivel": "level11",
+  "clase": "Clase 02 · PC4 — Pruebas de bondad de ajuste",
+  "fuente": "Apuntes de prueba no paramétrica, 3era parte — Bondad de ajuste con chi cuadrado, Jarque-Bera y Kolmogorov-Smirnov (Estadística 2)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "e11-q1",
+      "nivel": "comprension",
+      "enunciado": "Un restaurante anota el número de veces que cada cliente pide delivery en una semana. Los valores posibles son enteros: 0, 1, 2, 3… sin un máximo definido.\n\n¿A qué distribución conviene probar si se ajusta?",
+      "opciones": [
+        "Binomial, porque es una variable discreta con éxitos y fracasos",
+        "Exponencial, porque el dato se mide en una semana de tiempo",
+        "Poisson, porque cuenta sucesos en un intervalo de tiempo, de 0 a infinito",
+        "Normal, porque la muestra del restaurante es grande"
+      ],
+      "correcta": 2,
+      "explicacion": "Conteos en un intervalo de tiempo, enteros de 0 a infinito: es POISSON. La binomial también es discreta, pero tiene un máximo definido, como de 0 a 5 actividades. La exponencial es continua: mide tiempos, en intervalos abiertos."
+    },
+    {
+      "id": "e11-q2",
+      "nivel": "aplicacion",
+      "enunciado": "160 visitantes hicieron de 0 a 5 actividades en un parque, y el promedio salió 2,375. Se sospecha que el número de actividades sigue una binomial.\n\n¿Cuánto vale el parámetro estimado π?",
+      "opciones": [
+        "0,475, dividiendo la media entre el máximo de 5 actividades",
+        "2,375, porque el parámetro de la binomial es la media",
+        "0,0148, dividiendo la media entre los 160 visitantes",
+        "0,2, porque cada uno de los 5 valores tiene la misma probabilidad"
+      ],
+      "correcta": 0,
+      "explicacion": "En la binomial, X ~ B(n = 5; π) y π = x̄ / máximo de éxitos = 2,375 / 5 = 0,475. El 5 es el número de intentos, no el tamaño de muestra: esos 160 solo sirven para sacar la media."
+    },
+    {
+      "id": "e11-q3",
+      "nivel": "comprension",
+      "enunciado": "Esa binomial tiene 6 filas, de 0 a 5 actividades. El esperado de la última fila salió 3,86 y el de todas las demás es mayor a 5. Se estimó un solo parámetro, π.\n\n¿Qué se hace y cuántos grados de libertad quedan?",
+      "opciones": [
+        "Se deja como está, porque K = 6 y GL = 5",
+        "Se elimina la última fila, porque K = 5 y GL = 4",
+        "Se fusiona con la fila vecina, porque K = 6 y GL = 4",
+        "Se fusiona con la fila vecina: K = 5 y GL = 5 − 1 − 1 = 3"
+      ],
+      "correcta": 3,
+      "explicacion": "Si un esperado es menor a 5, se une con otra fila hasta que sume por lo menos 5; aquí 21,38 + 3,86 = 25,24. Con la fusión quedan K = 5 filas. Y GL = K − m − 1 = 5 − 1 − 1 = 3, con m = 1 porque se estimó π. Los datos no se borran: se suman."
+    },
+    {
+      "id": "e11-q4",
+      "nivel": "aplicacion",
+      "enunciado": "Tiempos de espera, en horas, y cuántos clientes hay en cada tramo:\n0 a 2: 800,  2 a 4: 330,  4 a 6: 150,  6 a 8: 50,  8 a 10: 20\nTotal: 1350. Se sospecha una exponencial.\n\n¿Cuánto vale β estimado?",
+      "opciones": [
+        "270, dividiendo los 1350 clientes entre los 5 tramos",
+        "2,274, usando la marca de clase de cada tramo: 3070/1350",
+        "5, que es la marca de clase del tramo del medio",
+        "1,274, usando el inicio de cada tramo en vez de la marca de clase"
+      ],
+      "correcta": 1,
+      "explicacion": "En la exponencial, β ≈ x̄ = ΣMi·oi / n, y Mi es la MARCA DE CLASE, el punto medio de cada intervalo: 1, 3, 5, 7 y 9. Eso da (800 + 990 + 750 + 350 + 180) / 1350 = 3070 / 1350 = 2,274. Es un solo parámetro, así que m = 1."
+    },
+    {
+      "id": "e11-q5",
+      "nivel": "aplicacion",
+      "enunciado": "Prueba de Poisson del delivery: 1500 clientes, 7 filas sin fusionar, y μ se estimó con los datos. Salió χ² = 6,60.\n\n¿Cuál es el crítico y qué se concluye?",
+      "opciones": [
+        "GL = 6 y crítico 12,59: se acepta, pero con un grado de más",
+        "GL = 5 y crítico 11,07: como 6,60 es mayor que 0,05, se rechaza",
+        "GL = 5 y crítico 11,07: como 6,60 ≤ 11,07, se acepta que se ajusta a una Poisson",
+        "GL = 2 y crítico 5,991: como 6,60 > 5,991, se rechaza que sea Poisson"
+      ],
+      "correcta": 2,
+      "explicacion": "GL = K − m − 1 = 7 − 1 − 1 = 5, porque se estimó μ. χ²(5; 0,95) = 11,07, y 6,60 ≤ 11,07 cae en la región de aceptación: se ajusta a una Poisson. El GL = 2 fijo es de Jarque-Bera, no de esta prueba. Y el χ² se compara con el crítico, no con α."
+    },
+    {
+      "id": "e11-q6",
+      "nivel": "comprension",
+      "enunciado": "El Minitab reporta para los pedidos de un distrito: N = 290, KS = 0,030 y valor P > 0,150. Se trabaja con α = 0,05.\n\n¿Qué se concluye?",
+      "opciones": [
+        "Se rechaza Hp, porque 0,150 es mayor que 0,05: los datos no son normales",
+        "Se acepta Hp, porque P ≥ α: los montos se ajustan a una distribución normal",
+        "No se puede concluir sin calcular antes la región crítica",
+        "Se rechaza Hp, porque el KS de 0,030 es menor que 0,05"
+      ],
+      "correcta": 1,
+      "explicacion": "En Kolmogorov-Smirnov no se calculan el estadístico ni la región crítica: se usa el valor P del reporte. Si P < α se rechaza; si P ≥ α se acepta. Aquí P > 0,150 ≥ 0,05, así que se acepta que se ajusta a la normal. Lo que se compara con α es P, no el KS."
+    },
+    {
+      "id": "e11-q7",
+      "nivel": "aplicacion",
+      "enunciado": "Primera pregunta del nonno. La binomial de las actividades, ya fusionada:\nObservados: 10, 30, 50, 40, 30\nEsperados: 6,38; 28,86; 52,22; 47,25; 25,24\nEl crítico con GL = 3 es 7,815.\n\n¿Qué se concluye?",
+      "opciones": [
+        "χ² = 4,20 ≤ 7,815: se acepta, el número de actividades se ajusta a una binomial",
+        "χ² = 4,20 > 0,05: se rechaza que sea binomial",
+        "χ² = 94,6 > 7,815: se rechaza, sumando (O − E)² sin dividir entre E",
+        "χ² = 0, porque los observados y los esperados suman lo mismo: 160"
+      ],
+      "correcta": 0,
+      "explicacion": "χ² = Σ(O − E)²/E = 2,05 + 0,04 + 0,09 + 1,11 + 0,90 = 4,20. Como 4,20 ≤ 7,815, se acepta Hp. Un χ² pequeño quiere decir que lo observado y lo esperado se parecen: el traje le queda."
+    },
+    {
+      "id": "e11-q8",
+      "nivel": "aplicacion",
+      "enunciado": "Segunda pregunta. El gasto semanal en carne de un distrito tiene n = 51, asimetría 1,71 y curtosis 2,79.\n\n¿Se ajusta a una normal?",
+      "opciones": [
+        "Sí: JB = 4,87 ≤ 5,991, olvidándose de multiplicar por n/6",
+        "No se puede saber sin el reporte de Minitab",
+        "Sí: JB = 7,60 con GL = 3, así que 7,60 ≤ 7,815",
+        "No: JB = (51/6)(1,71² + 2,79²/4) = 41,40 > 5,991, así que se rechaza"
+      ],
+      "correcta": 3,
+      "explicacion": "Con asimetría y curtosis, es Jarque-Bera: JB = (n/6)(A² + K²/4) = 8,5 × (2,924 + 1,946) = 41,40. Siempre tiene GL = 2, así que el crítico es 5,991. Como 41,40 > 5,991 se rechaza: no es normal. La distribución es asimétrica a la derecha y leptocúrtica."
+    },
+    {
+      "id": "e11-q9",
+      "nivel": "comprension",
+      "enunciado": "Tercera pregunta. Cuatro distritos. Tres tienen asimetría, curtosis y un reporte KS. El cuarto solo tiene asimetría y curtosis.\n\n¿Qué prueba le aplicas a cada uno para ver si son normales?",
+      "opciones": [
+        "Jarque-Bera a todos, porque los cuatro tienen asimetría y curtosis",
+        "Chi cuadrado a todos, porque sirve para cualquier distribución",
+        "KS a los tres, porque es más precisa, y Jarque-Bera al cuarto, porque es lo único que se puede",
+        "KS a los cuatro, porque es la más precisa de las tres"
+      ],
+      "correcta": 2,
+      "explicacion": "Si tienes los datos de las dos, se sugiere KS, que es más precisa. Pero al cuarto no le dieron reporte KS, así que solo queda Jarque-Bera. Chi cuadrado necesitaría una tabla con intervalos, y aquí no la hay."
+    }
+  ]
+}

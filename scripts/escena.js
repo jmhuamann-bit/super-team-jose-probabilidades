@@ -194,6 +194,13 @@ const FICHAS = [
   { sprite: "grua", nombre: "La Grúa que Lee el Valor P al Revés", texto: "Si P < α se rechaza Hp; si P ≥ α se acepta. Un valor P chiquito es evidencia CONTRA la Hp." },
   { sprite: "engranaje", nombre: "El Engranaje que No Gira en Proporción", texto: "Para probar 3:2:1 se suman las partes, 6, y se reparte el total: 675, 450 y 225 de 1350." },
   { sprite: "chaebol", nombre: "El Gerente de la Encuesta Final", texto: "Jefe de Corea del Sur: pide calcular un χ², saber cuándo corregirlo y medir la relación con el coeficiente de contingencia." },
+  { sprite: "pizza", nombre: "La Pizza que No Reconoce su Distribución", texto: "Italia: conteos en un intervalo de tiempo, de 0 a infinito, son Poisson. Con un máximo definido, binomial. Tiempos en intervalos abiertos, exponencial." },
+  { sprite: "vespa", nombre: "La Vespa que No Divide entre Cinco", texto: "En la binomial, π = media / máximo de éxitos: con media 2,375 y 5 actividades, π = 0,475." },
+  { sprite: "torre", nombre: "La Torre que No Fusiona las Filas", texto: "Si un esperado es menor a 5, se une con otra fila, y esa fila ya no cuenta en K: de 6 filas a 5, y GL = 5 − 1 − 1 = 3." },
+  { sprite: "gelato", nombre: "El Gelato sin Marca de Clase", texto: "En la exponencial, β se estima con la marca de clase de cada intervalo: β = ΣMi·oi / n = 3070/1350 = 2,274." },
+  { sprite: "espresso", nombre: "El Espresso que Cuenta Mal los Grados", texto: "GL = K − m − 1. En Poisson con 7 filas y un parámetro estimado, GL = 5 y el crítico es 11,07. En JB siempre es 2." },
+  { sprite: "coliseo", nombre: "El Coliseo que No Lee el Valor P", texto: "En KS no se calcula nada: se lee el valor P del Minitab. Con P > 0,150 y α = 0,05, se acepta que es normal." },
+  { sprite: "nonno", nombre: "El Nonno que Prueba el Traje", texto: "Jefe de Italia: pide una prueba binomial completa, un Jarque-Bera a mano y elegir qué prueba toca según el dato que te den." },
 ];
 
 export function galeriaPersonajes(contenedor) {

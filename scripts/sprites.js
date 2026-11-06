@@ -1157,6 +1157,156 @@ const KTX = [        // el KTX, el tren bala que es la salida del distrito (32 �
 ];
 const P_KTX = { k: "#1f1b16", c: "#e4e8ec", r: "#c0392b", v: "#5f8296" };
 
+const PIZZA = [    // la pizza: no reconoce a qué distribución se parecen los datos (18 × 14)
+  ".....kkkkkkkk.....",
+  "...kkmmmmmmmmkk...",
+  "..kmmmqqqqqqmmmk..",
+  ".kmmqppqqqqqqqmmk.",
+  "kmmqqppqqqqppqqmmk",
+  "kmmqqqqqqqqppqqmmk",
+  "kmqqqqqqqqqqqqqqmk",
+  "kmqqqqqqqppqqqqqmk",
+  "kmmqppqqqppqqqqmmk",
+  "kmmqppqqqqqqqppmmk",
+  ".kmmqqqqqqqqqppmk.",
+  "..kmmmqppqqqmmmk..",
+  "...kkmmppmmmmkk...",
+  ".....kkkkkkkk.....",
+];
+const P_PIZZA = { k: "#2a1a12", q: "#e8c45a", m: "#c0682c", p: "#b5302a" };
+
+const VESPA = [    // la vespa: se olvida de dividir la media entre el máximo de éxitos (18 × 14)
+  ".kkkkkk...........",
+  "knnnnnnk..........",
+  ".kkcckk....kkkkk..",
+  "..kcck....knnnnnk.",
+  ".kkcck....kccccck.",
+  "kfcccck...kccccck.",
+  "kfcccck..kccccccck",
+  ".kcccck..kccccccck",
+  ".kcccckkkkccccccck",
+  ".kcgngcccccccgngck",
+  ".kgnnngcccccgnnngk",
+  ".knnnnncccccnnnnnk",
+  ".kgnnngkkkkkgnnngk",
+  "..kgngk.....kgngk.",
+];
+const P_VESPA = { k: "#1a1a1c", c: "#57b4c6", n: "#2e2e34", f: "#f2e6a0", g: "#9a9aa2" };
+
+const TORRE = [    // la torre: no fusiona las filas con esperado menor a 5 (18 × 14)
+  "......kssssssk....",
+  ".....kwwwwwwwwk...",
+  ".....kssssssssk...",
+  "....kwwwwwwwwk....",
+  "....kssssssssk....",
+  "....kwwwwwwwwk....",
+  "....kssssssssk....",
+  "...kwwwwwwwwk.....",
+  "...kssssssssk.....",
+  "...kwwwwwwwwk.....",
+  "...kssssssssk.....",
+  "..kwwwwwwwwk......",
+  "..kssssssssk......",
+  ".kssssssssssk.....",
+];
+const P_TORRE = { k: "#4e473c", w: "#f4eede", s: "#8a8070" };
+
+const GELATO = [    // el gelato: estima beta sin usar la marca de clase (18 × 14)
+  ".....kvvvvvk......",
+  "....kvvvvvvvk.....",
+  "....kvvvvvvvk.....",
+  ".....kkkkkkk......",
+  "....kwwwwwwwk.....",
+  "....kwwwwwwwk.....",
+  "....kkkkkkkkk.....",
+  "...krrrrrrrrrk....",
+  "...krrrrrrrrrk....",
+  "..kcccccccccck....",
+  "...kcccccccck.....",
+  "....kcdcdcdk......",
+  ".....kdcdkdk......",
+  "......kkk.k.......",
+];
+const P_GELATO = { k: "#2a1a12", v: "#4a9a4a", w: "#f6f1e4", r: "#c0392b", c: "#c98a3c", d: "#9a6626" };
+
+const ESPRESSO = [    // el espresso: se confunde con los grados de libertad (18 × 14)
+  "......h...h.......",
+  "......h....h......",
+  ".......h...h......",
+  "....kkkkkkkkk.....",
+  "...kwwwwwwwwwkkk..",
+  "...kwbbbbbbbwwwwk.",
+  "...kwbbbbbbbwkkwk.",
+  "...kwwwwwwwwwkkwk.",
+  "...kwwwwwwwwwwwwk.",
+  "...kwwwwwwwwwkkk..",
+  "..kkwwwwwwwwwkkk..",
+  ".kwwwwwwwwwwwwwwk.",
+  ".kwwwwwwwwwwwwwwk.",
+  "..kkkkkkkkkkkkkk..",
+];
+const P_ESPRESSO = { k: "#2a1a12", w: "#f4efe0", b: "#4a2c18", h: "#c9c4b4" };
+
+const COLISEO = [    // el coliseo: no sabe leer el valor P del reporte de KS (18 × 14)
+  "..................",
+  ".......kkkkkkkkkk.",
+  "......kssssssssssk",
+  ".....ksssssssssssk",
+  "....ksaassaassaask",
+  "...kssaassaassaask",
+  "..kassaassaassaask",
+  ".kaassaassaassaask",
+  ".ksssssssssssssssk",
+  "ksaassaassaassaask",
+  "ksaassaassaassaask",
+  "ksaassaassaassaask",
+  "ksaassaassaassaask",
+  "kssssssssssssssssk",
+];
+const P_COLISEO = { k: "#4e473c", s: "#d8ccb0", a: "#4a443a" };
+
+const NONNO = [    // jefe: el nonno sastre, que prueba si el traje de la distribución le queda a los datos (18 × 17)
+  "...kggggggggggk...",
+  "...kggggggggggk...",
+  "..kggggggggggggk..",
+  "...kkppppppppkk...",
+  "....kpkppppkpk....",
+  "....kppppppppk....",
+  "....kpwwwwwwpk....",
+  "....kppwwwwppk....",
+  "..kkvvvwwwwvvvkk..",
+  ".kppvvvwwwwvvvppk.",
+  ".kppvvvwwwwvvvppk.",
+  ".kppvvvwwwwvvvppk.",
+  ".kppvvvwwwwvvvppk.",
+  ".kppvvvwwwwvvvppk.",
+  "..kkknnnkknnnkkk..",
+  "....knnnkknnnk....",
+  "....knnnkknnnk....",
+];
+const P_NONNO = { k: "#231a14", g: "#6b5a44", p: "#d9a273", w: "#efe9da", v: "#4a5a3a", n: "#3a3a44" };
+
+const CINQUECENTO = [    // el autito redondo que motorizó al país, y acá es el vehículo de salida (32 × 16)
+  "................................",
+  "..............kkkk..............",
+  "............kkcccckk............",
+  "..........kkcccccccckk..........",
+  ".........kvvvvvvcvvvvvk.........",
+  "........kcvvvvvvcvvvvvck........",
+  "....kkkkccvvvvvvcvvvvvcckkkk....",
+  "..kkcccccccccccccccccccccccckk..",
+  ".kffccccccccccccccccccccccccffk.",
+  ".kffccccgggcccccccccccgggcccffk.",
+  "..kccccgnnngcccccccccgnnngccck..",
+  "..kcnngnnnnngnnnnnnngnnnnngnck..",
+  "..kcnngnnnnngnnnnnnngnnnnngnck..",
+  "...kkkgnnnnngkkkkkkkgnnnnngkk...",
+  "......kgnnngk.......kgnnngk.....",
+  ".......kgggk.........kgggk......",
+];
+const P_CINQUECENTO = { k: "#1a1a1c", c: "#c6b268", v: "#9fc2cc", n: "#2e2e34", f: "#f2e6a0", g: "#9a9aa2" };
+
+
 
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
@@ -1228,6 +1378,14 @@ const DEFINICIONES = {
   engranaje:    [ENGRANAJE, P_ENGRANAJE],
   chaebol:      [CHAEBOL, P_CHAEBOL],
   ktx:          [KTX, P_KTX],
+  pizza:        [PIZZA, P_PIZZA],
+  vespa:        [VESPA, P_VESPA],
+  torre:        [TORRE, P_TORRE],
+  gelato:       [GELATO, P_GELATO],
+  espresso:     [ESPRESSO, P_ESPRESSO],
+  coliseo:      [COLISEO, P_COLISEO],
+  nonno:        [NONNO, P_NONNO],
+  cinquecento:  [CINQUECENTO, P_CINQUECENTO],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

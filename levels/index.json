@@ -125,6 +125,20 @@
       "abierto": true,
       "mapa": "levels/level10.json",
       "preguntas": "questions/level10_questions.json"
+    },
+    {
+      "id": "level11",
+      "clase": "Clase 02",
+      "distrito": "Italia",
+      "titulo": "El país de los sastres, donde cada traje se prueba antes de venderlo",
+      "icono": "🧵",
+      "seccion": "PC4",
+      "seccionNota": "Estadística no paramétrica — y seguimos dando la vuelta al mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level11.json",
+      "preguntas": "questions/level11_questions.json"
     }
   ]
 }

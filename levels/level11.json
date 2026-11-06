@@ -1,0 +1,41 @@
+{
+  "id": "level11",
+  "distrito": "Italia",
+  "clase": "Clase 02 · PC4",
+  "titulo": "El país de los sastres, donde cada traje se prueba antes de venderlo",
+  "tema": "italia",
+  "musica": "italia",
+  "vehiculo": "cinquecento",
+  "intro": "Segunda clase de la PC4: las PRUEBAS DE BONDAD DE AJUSTE. Toca Italia por sus sastres: antes de vender un traje, te lo prueban para ver si te queda. Acá el cliente son los datos y el traje es una distribución. ¿Le queda una Poisson, una binomial, una exponencial, una normal? Hay tres pruebas. CHI CUADRADO sirve para cualquier distribución y necesita una tabla. JARQUE-BERA es solo para la normal, se hace a mano con la asimetría y la curtosis, y es menos precisa. KOLMOGOROV-SMIRNOV también es solo para la normal, se lee del reporte de Minitab y es la más precisa. En las tres, la Hp dice que los datos SÍ se ajustan.",
+  "repaso": [
+    "LAS HIPÓTESIS, en las tres pruebas: Hp dice que la variable SE AJUSTA a la distribución y Ha dice que NO se ajusta. α = 0,05, unilateral a la derecha.",
+    "LAS TRES PRUEBAS: CHI CUADRADO sirve para cualquier distribución y necesita una tabla. JARQUE-BERA es para la normal, necesita asimetría y curtosis y es menos precisa. KOLMOGOROV-SMIRNOV es para la normal, usa el reporte de Minitab y es más precisa: si tienes los datos de las dos, se sugiere KS.",
+    "RECONOCER LA DISTRIBUCIÓN: BINOMIAL, discreta con un máximo definido (de 0 a 5 actividades). POISSON, conteos en un intervalo de tiempo o de cualquier cosa, enteros de 0 a infinito. EXPONENCIAL, continua, tiempos en intervalos abiertos. NORMAL, continua, el problema suele decirlo.",
+    "ESTIMAR EL PARÁMETRO: binomial, π = x̄ / máximo de éxitos. Poisson, μ = Σx·oi / n. Exponencial, β = ΣMi·oi / n, con Mi la marca de clase de cada intervalo. Normal, la media y la varianza, con la media ΣMi·oi / n.",
+    "LOS ESPERADOS: E = n · P, con P la probabilidad que da la distribución. NO salen de multiplicar O por P directamente: primero hay que conocer el parámetro. Las probabilidades suman 1. En la exponencial se usa la acumulada, F(x) = 1 − e^(−x/β), y F(2 a 4) = F(4) − F(2).",
+    "FUSIONAR: si algún esperado es menor a 5, se une con otra fila hasta que sume por lo menos 5. La binomial del examen tenía 3,86 en la última fila; se unió con la anterior y quedó 25,24 esperado contra 30 observado.",
+    "LOS GRADOS DE LIBERTAD: GL = K − m − 1. K es el número de filas después de fusionar. m es el número de parámetros ESTIMADOS: vale 1 en binomial, Poisson y exponencial, y puede valer 2 en la normal, si se estiman la media y la varianza.",
+    "EL ESTADÍSTICO: χ² = Σ (O − E)²/E, si n ≥ 50 y GL > 1. Si el calculado es menor o igual al crítico se acepta Hp. Críticos al 95%: GL 2 es 5,991; GL 3 es 7,815; GL 5 es 11,07.",
+    "EJEMPLO BINOMIAL: 160 visitantes, de 0 a 5 actividades. Media 2,375, π = 0,475, K = 5 tras fusionar, GL = 3. χ² = 4,20 ≤ 7,815: se acepta que es binomial.",
+    "EJEMPLO POISSON: 1500 clientes, μ = 2,313, 7 filas, GL = 5. χ² = 6,60 ≤ 11,07: se acepta que es Poisson.",
+    "JARQUE-BERA: JB = (n/6)·(A² + K²/4), con A la asimetría y K la curtosis. Siempre con GL = 2, así que el crítico es 5,991. En el fondo verifica que sea simétrica y mesocúrtica. Comas, con n = 51, A = 1,71 y K = 2,79: JB = 41,40, se rechaza. San Borja, con n = 400, A = 2,18 y K = 6,55: JB = 1031,86, se rechaza.",
+    "KOLMOGOROV-SMIRNOV: no se calcula ni el estadístico ni la región crítica. Se lee el valor P del Minitab: si P < α se rechaza Hp; si P ≥ α se acepta. Jesús María, con P > 0,150, se ajusta a la normal."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                   AA                                                                                                               ",
+    "                      L                    V                                                                 G                                                                      ",
+    "                                                                 oo  oo                                                                                                             ",
+    "                                                                 ======                                                                                                             ",
+    "      oo?oo          oooo               oo                                      ooooooooooo               oo              ooooo                     V   1    oooooooo               ",
+    "                    ======              ======                                                   ooooo    ======                 ooooo                      ==========              ",
+    "                               oooo                            =====                                                                                                                ",
+    "  P           C             E                       E     C T               E     X   E X     C                     E       X             C   E                         B       M   ",
+    "################################  ################################################################   #############################   ###############################################",
+    "################################  ################################################################   #############################   ###############################################",
+    "################################  ################################################################   #############################   ###############################################"
+  ]
+}
