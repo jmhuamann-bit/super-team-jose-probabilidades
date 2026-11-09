@@ -201,6 +201,13 @@ const FICHAS = [
   { sprite: "espresso", nombre: "El Espresso que Cuenta Mal los Grados", texto: "GL = K − m − 1. En Poisson con 7 filas y un parámetro estimado, GL = 5 y el crítico es 11,07. En JB siempre es 2." },
   { sprite: "coliseo", nombre: "El Coliseo que No Lee el Valor P", texto: "En KS no se calcula nada: se lee el valor P del Minitab. Con P > 0,150 y α = 0,05, se acepta que es normal." },
   { sprite: "nonno", nombre: "El Nonno que Prueba el Traje", texto: "Jefe de Italia: pide una prueba binomial completa, un Jarque-Bera a mano y elegir qué prueba toca según el dato que te den." },
+  { sprite: "horno", nombre: "El Horno que No Pide Asimetría", texto: "España: si te dan asimetría y curtosis, es una invitación directa a Jarque-Bera, que se hace a mano." },
+  { sprite: "giraldillo", nombre: "El Giraldillo que No Mira la Forma", texto: "Jarque-Bera verifica que la distribución sea simétrica y mesocúrtica. Si cumple, se asocia a una normal." },
+  { sprite: "caseta", nombre: "La Caseta que Lee la P al Revés", texto: "En Kolmogorov-Smirnov, la Hp dice que SÍ es normal. Si P < α se rechaza; si P ≥ α se acepta." },
+  { sprite: "andamio", nombre: "El Andamio que Se Queda con la Menos Precisa", texto: "Si tienes los datos de las dos, se sugiere Kolmogorov-Smirnov: es más precisa que Jarque-Bera." },
+  { sprite: "naranja", nombre: "La Naranja que Compara lo que No Es", texto: "Levene compara VARIANZAS de varios grupos. Las medianas son trabajo de Kruskal-Wallis." },
+  { sprite: "peineta", nombre: "La Peineta que Mira el Tiempo y No el Puesto", texto: "En Kruskal-Wallis importan las POSICIONES, no los valores. Si dos empatan, cada una lleva el promedio de sus puestos." },
+  { sprite: "aparejador", nombre: "El Director de la Vuelta", texto: "Jefe de España: primero revisa la normalidad de cada grupo y recién después lee Levene y Kruskal-Wallis." },
 ];
 
 export function galeriaPersonajes(contenedor) {

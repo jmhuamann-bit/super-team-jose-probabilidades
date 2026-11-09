@@ -139,6 +139,20 @@
       "abierto": true,
       "mapa": "levels/level11.json",
       "preguntas": "questions/level11_questions.json"
+    },
+    {
+      "id": "level12",
+      "clase": "Clase 03",
+      "distrito": "España",
+      "titulo": "El país de la Vuelta, donde importa en qué puesto llegas",
+      "icono": "🚴",
+      "seccion": "PC4",
+      "seccionNota": "Estadística no paramétrica — y seguimos dando la vuelta al mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level12.json",
+      "preguntas": "questions/level12_questions.json"
     }
   ]
 }

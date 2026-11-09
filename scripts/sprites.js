@@ -1306,6 +1306,156 @@ const CINQUECENTO = [    // el autito redondo que motorizó al país, y acá es 
 ];
 const P_CINQUECENTO = { k: "#1a1a1c", c: "#c6b268", v: "#9fc2cc", n: "#2e2e34", f: "#f2e6a0", g: "#9a9aa2" };
 
+const HORNO = [       // el horno: no sabe qué datos pide Jarque-Bera (18 × 14)
+  "............hh....",
+  "...........kkkk...",
+  "...........kkkk...",
+  "...........kkkk...",
+  ".kkkkkkkkkkkkkkkk.",
+  ".kmpppppppmmmmmmk.",
+  ".kmpppppppmmmmmmk.",
+  ".kkkkkkkkkkkkkkkk.",
+  ".kmmkkkkkkkkkkmmk.",
+  ".kmmkffffffffkmmk.",
+  ".kkkkfoooooofkkkk.",
+  ".kmmkfoooooofkmmk.",
+  ".kmmkkkkkkkkkkmmk.",
+  ".kkkkkkkkkkkkkkkk.",
+];
+const P_HORNO = { k: "#201c18", m: "#a5553a", f: "#3a2a22", o: "#e8923a", p: "#e0cfa4", h: "#b9c0bc" };
+
+const GIRALDILLO = [  // el giraldillo: cree que Jarque-Bera mira cualquier cosa, y no la forma (18 × 14)
+  "..................",
+  "............kkkkk.",
+  ".....kkkkkkkkoook.",
+  ".....kboooobk.....",
+  "..oookboooobk.....",
+  "..kkkkboooobk.....",
+  ".....kkkkkkkk.....",
+  "........kk........",
+  "........kk........",
+  "........kk........",
+  "........kk........",
+  "........kk........",
+  "........kk........",
+  ".....kkkkkkkk.....",
+];
+const P_GIRALDILLO = { k: "#201c18", b: "#7a6a3a", o: "#c9a23c" };
+
+const CASETA = [      // la caseta: lee al revés el valor P de Kolmogorov-Smirnov (18 × 14)
+  "..................",
+  "..................",
+  "..................",
+  "krrkkrrkkrrkkrrkkk",
+  "kkkkkkkkkkkkkkkkkk",
+  ".kkrvvrvvrvvrvvkk.",
+  ".kkrvvrvvrvvrvvkk.",
+  ".kkrvvkkkkkkrvvkk.",
+  ".kkrvvkffffkrvvkk.",
+  ".kkrvvkffffkrvvkk.",
+  ".kkrvvkfffokrvvkk.",
+  ".kkrvvkffffkrvvkk.",
+  ".kkrvvkffffkrvvkk.",
+  ".kkrvvkkkkkkrvvkk.",
+];
+const P_CASETA = { k: "#201c18", r: "#c0392b", v: "#e8e4d8", f: "#3a3028", o: "#c9a23c" };
+
+const ANDAMIO = [     // el andamio: se queda con la prueba menos precisa (18 × 14)
+  "..................",
+  "..kk....kk....kk..",
+  "..ss....ss....ss..",
+  "..ssssssssssssss..",
+  "..stttttss....ss..",
+  "..stttttss....ss..",
+  "..ssooo.ss....ss..",
+  "..sskkk.ss....ss..",
+  "..ssssssssssssss..",
+  "..ss....stttttss..",
+  "..ss....stttttss..",
+  "..ss....ss....ss..",
+  "..ss....ss....ss..",
+  "..kksssskksssskk..",
+];
+const P_ANDAMIO = { k: "#201c18", s: "#8a9298", t: "#9a6a3a", o: "#c9a23c" };
+
+const NARANJA = [     // la naranja: cree que Levene compara promedios (18 × 14)
+  "..................",
+  "...........vvvv...",
+  "...vvvv...vkkkkv..",
+  "..vvvvvvttvvvvvv..",
+  "..vvvvvvttk.......",
+  "......kkoookk.....",
+  ".....kkaooookk....",
+  ".....kaaaooook....",
+  "....kooaooooook...",
+  "....koooooooook...",
+  "....koooooooook...",
+  ".....koooooook....",
+  ".....kkoooookk....",
+  "......kkoookk.....",
+];
+const P_NARANJA = { k: "#201c18", o: "#e8822a", a: "#f8d8a0", t: "#6a4a28", v: "#4a7a3a" };
+
+const PEINETA = [     // la peineta: mira los valores en Kruskal-Wallis, y no las posiciones (18 × 14)
+  "..................",
+  "......kkkkkk......",
+  "....kkckckckkk....",
+  "...kckckckckckk...",
+  "...kckckckckckc...",
+  "..kkckckckckckck..",
+  "..ckckckckckckck..",
+  "..kkkkkkkkkkkkkk..",
+  "..kcccccccccccck..",
+  "..kkkkkkkkkkkkkk..",
+  "....kk.kk.kk.kk...",
+  "....kk.kk.kk.kk...",
+  "....kk.kk.kk.kk...",
+  "....kk.kk.kk.kk...",
+];
+const P_PEINETA = { k: "#201c18", c: "#e8dcc4" };
+
+const APAREJADOR = [  // jefe: el director de la Vuelta, que junta normalidad, varianzas y medianas (18 × 17)
+  ".....oooooooo.....",
+  "...kkkkkkkkkkkk...",
+  ".....kkkkkkkk.....",
+  ".....kpkppkpk.....",
+  ".....kppppppk.....",
+  ".....kpkkkkpk.....",
+  ".....kkkkkkkk.....",
+  "...kkkkkkkkkkkk...",
+  "...kvvvvvvkkkkk...",
+  "...kaaaaaakcckk...",
+  "...kvvvvvvkcckk...",
+  "...kaaaaaakkkkk...",
+  "...kkkkkkkkkkkk...",
+  "...kkkkkkkkkkkk...",
+  "....kkk....kkk....",
+  "....kkk....kkk....",
+  "...kkkkk..kkkkk...",
+];
+const P_APAREJADOR = { k: "#201c18", p: "#d9a273", v: "#e8822a", a: "#e8dcc4", c: "#8fb4cc", o: "#c9a23c" };
+
+const TRANVIA = [     // el tranvía de la Avenida, que es la salida del distrito (32 × 16)
+  "ssssssssssssssssssssssssssssssss",
+  "..............kkkk..............",
+  "..............kkkk..............",
+  ".kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.",
+  ".kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.",
+  ".kvvvvvvvvvvvvvvvvvvvvvvvvvccck.",
+  "aavkkkkkvkkkkkvkkkkkvkkkkkvccck.",
+  "aavkccckvkccckvkccckvkccckvccck.",
+  "aavkccckvkccckvkccckvkccckvccck.",
+  ".kvkkkkkvkkkkkvkkkkkvkkkkkvccck.",
+  ".krrrrrrrrrrrrrrrrrrrrrrrrrrrrk.",
+  ".kvvvvvvvvvvvvvvvvvvvvvvvvvvvvk.",
+  ".kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.",
+  ".....kkkkk....kkkkk....kkkkk....",
+  "....kkkkkkk..kkkkkkk..kkkkkkk...",
+  ".....kkkkk....kkkkk....kkkkk....",
+];
+const P_TRANVIA = { k: "#201c18", v: "#e8e4d8", c: "#8fb4cc", r: "#c0392b", a: "#f8e8b0", s: "#8a9298" };
+
+
 
 
 /* ---------------------------------------------------------------
@@ -1386,6 +1536,14 @@ const DEFINICIONES = {
   coliseo:      [COLISEO, P_COLISEO],
   nonno:        [NONNO, P_NONNO],
   cinquecento:  [CINQUECENTO, P_CINQUECENTO],
+  horno:        [HORNO, P_HORNO],
+  giraldillo:   [GIRALDILLO, P_GIRALDILLO],
+  caseta:       [CASETA, P_CASETA],
+  andamio:      [ANDAMIO, P_ANDAMIO],
+  naranja:      [NARANJA, P_NARANJA],
+  peineta:      [PEINETA, P_PEINETA],
+  aparejador:   [APAREJADOR, P_APAREJADOR],
+  tranvia:      [TRANVIA, P_TRANVIA],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

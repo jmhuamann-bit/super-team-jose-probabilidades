@@ -1,0 +1,125 @@
+{
+  "nivel": "level12",
+  "clase": "Clase 03 · PC4 — Jarque-Bera, Kolmogorov-Smirnov, Levene y Kruskal-Wallis",
+  "fuente": "Apuntes de prueba no paramétrica, clase 02 y 3era parte (Estadística 2)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "e12-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "Te piden verificar si una variable es normal. Lo único que te dan es la asimetría, la curtosis y el tamaño de muestra.\n\n¿Qué prueba te están invitando a usar?",
+      "opciones": [
+        "Levene, porque la curtosis mide la varianza",
+        "Kruskal-Wallis, porque no hay datos individuales",
+        "Jarque-Bera, porque usa justamente la asimetría y la curtosis",
+        "Kolmogorov-Smirnov, porque es la más precisa de todas"
+      ],
+      "correcta": 2,
+      "explicacion": "Asimetría y curtosis son la invitación directa a Jarque-Bera, que se hace a mano. Kolmogorov-Smirnov también verifica normalidad, pero necesita su reporte de Minitab. Levene y Kruskal-Wallis comparan grupos: no prueban normalidad."
+    },
+    {
+      "id": "e12-q2",
+      "nivel": "comprension",
+      "enunciado": "En el fondo, ¿qué está revisando Jarque-Bera en una distribución?",
+      "opciones": [
+        "Que tenga la media igual a la mediana y la varianza igual a uno",
+        "Que sea simétrica y mesocúrtica; si cumple, se asocia a una normal",
+        "Que todos los grupos tengan la misma varianza",
+        "Que los datos estén ordenados por posiciones"
+      ],
+      "correcta": 1,
+      "explicacion": "Jarque-Bera mira la forma: asimetría cercana a cero y curtosis cercana a cero, o sea simétrica y mesocúrtica. Como esas son características de la normal, si cumple se asocia a una normal."
+    },
+    {
+      "id": "e12-q3",
+      "nivel": "comprension",
+      "enunciado": "El Minitab reporta para un distrito: KS = 0,030 y valor P > 0,150. Se trabaja con α = 0,05.\n\n¿Qué se concluye?",
+      "opciones": [
+        "Se acepta la Hp: los montos se aproximan a una normal",
+        "Se rechaza la Hp, porque el valor P es mayor que α",
+        "Se rechaza la Hp, porque el KS es menor que α",
+        "No se concluye nada sin calcular la región crítica"
+      ],
+      "correcta": 0,
+      "explicacion": "En Kolmogorov-Smirnov, la Hp dice que la variable SÍ se aproxima a una normal. Como P ≥ α, se acepta. No se calcula nada más: lo que se compara con α es el valor P, no el KS."
+    },
+    {
+      "id": "e12-q4",
+      "nivel": "comprension",
+      "enunciado": "Tienes para un mismo distrito la asimetría, la curtosis y además un reporte KS.\n\n¿Con cuál te quedas para probar normalidad?",
+      "opciones": [
+        "Con Jarque-Bera, porque se puede hacer a mano",
+        "Con las dos, y se promedian sus resultados",
+        "Con ninguna: si hay dos reportes, se cancelan",
+        "Con Kolmogorov-Smirnov, porque es más precisa"
+      ],
+      "correcta": 3,
+      "explicacion": "Jarque-Bera es útil, pero es muy aproximada. Si tienes los datos de las dos, el apunte sugiere seguir el método de Kolmogorov-Smirnov, que es más preciso."
+    },
+    {
+      "id": "e12-q5",
+      "nivel": "reconocimiento",
+      "enunciado": "¿Para qué sirve la prueba de Levene y qué dice su Hp?",
+      "opciones": [
+        "Compara medianas; su Hp dice que todas son diferentes",
+        "Compara varianzas de varios grupos; su Hp dice que todas las varianzas son iguales",
+        "Verifica normalidad; su Hp dice que la variable es normal",
+        "Compara promedios; su Hp dice que al menos uno es diferente"
+      ],
+      "correcta": 1,
+      "explicacion": "Levene compara muchas varianzas a la vez y se usa cuando hay datos no normales. Hp: todas las varianzas son iguales. Ha: al menos una es diferente. Se lee del Minitab con el valor P."
+    },
+    {
+      "id": "e12-q6",
+      "nivel": "comprension",
+      "enunciado": "En Kruskal-Wallis dos datos empatan justo en las posiciones 5 y 6.\n\n¿Qué posición le toca a cada uno, y qué importa en esta prueba?",
+      "opciones": [
+        "5 a uno y 6 al otro; importan los valores de la variable",
+        "Los dos llevan 5; importan los valores de la variable",
+        "Los dos llevan 5,5; lo que importa son las posiciones, no los valores",
+        "Los dos se eliminan, porque los empates no se pueden ordenar"
+      ],
+      "correcta": 2,
+      "explicacion": "Kruskal-Wallis no trabaja con los valores, sino con sus POSICIONES, como una carrera. Si dos datos se repiten, cada uno lleva el promedio de las posiciones que ocupan: (5 + 6)/2 = 5,5."
+    },
+    {
+      "id": "e12-q7",
+      "nivel": "comprension",
+      "enunciado": "Primera pregunta del director. Tres segmentos de una plataforma, con reporte KS:\nA: P > 0,150\nB: P = 0,146\nC: P = 0,038\n\n¿Qué se usa para comparar sus varianzas y sus medianas?",
+      "opciones": [
+        "Levene y Kruskal-Wallis, porque el segmento C no es normal y con uno solo basta",
+        "Nada, porque dos de los tres segmentos son normales",
+        "Solo Kruskal-Wallis, y solo para el segmento C",
+        "Jarque-Bera, para confirmar lo que dijo el reporte KS"
+      ],
+      "correcta": 0,
+      "explicacion": "A y B tienen P ≥ 0,05: son normales. C tiene 0,038 < 0,05: no lo es. Basta con que una variable no sea normal para que forzosamente se use Levene para las varianzas y Kruskal-Wallis para las medianas, comparando a todos los grupos."
+    },
+    {
+      "id": "e12-q8",
+      "nivel": "comprension",
+      "enunciado": "Segunda pregunta. Levene entre cuatro distritos da un valor P = 0,000 con α = 0,05.\n\n¿Qué se concluye?",
+      "opciones": [
+        "Las varianzas son iguales en los cuatro distritos",
+        "Las varianzas son diferentes en los cuatro, todas entre sí",
+        "Las medianas de los cuatro distritos son diferentes",
+        "En al menos un distrito la varianza es diferente"
+      ],
+      "correcta": 3,
+      "explicacion": "P < α: se rechaza que todas sean iguales. Pero la Ha solo dice que AL MENOS UNA es diferente: no afirma que las cuatro lo sean. Y Levene habla de varianzas, no de medianas."
+    },
+    {
+      "id": "e12-q9",
+      "nivel": "comprension",
+      "enunciado": "Tercera pregunta. Kruskal-Wallis entre los tres segmentos da H = 3,15 y valor P = 0,207, con α = 0,05.\n\n¿Qué se concluye sobre el tiempo de uso?",
+      "opciones": [
+        "Se rechaza la Hp, porque 3,15 es mayor que 0,207",
+        "Se acepta la Hp: la mediana del tiempo de uso es similar en los tres segmentos",
+        "En al menos un segmento la mediana es diferente",
+        "Se acepta la Hp: las varianzas son iguales en los tres segmentos"
+      ],
+      "correcta": 1,
+      "explicacion": "El valor P es el que se compara con α: 0,207 ≥ 0,05, así que se acepta. Kruskal-Wallis habla de medianas o, como aproximación, de promedios: no hay evidencia de una diferencia en la tendencia central."
+    }
+  ]
+}

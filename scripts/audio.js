@@ -74,6 +74,14 @@ const TEMAS_MUSICA = {
               "A4",1,"B4",1,"C5",2,"B4",2,"A4",2,"G#4",2,"A4",4],
     bajo:    ["A2",4,"E2",4,"A2",4,"D2",4,"A2",4,"E2",4,"E2",4,"A2",4],
   },
+  giralda: { // España: aire de bulería, con palmas y el remate seco
+    tempo: 0.17, onda: "sawtooth",
+    melodia: ["A3",2,"Bb3",1,"A3",1,"G3",2,"F3",2,"E3",4,
+              "A3",2,"C4",2,"D4",2,"C4",1,"Bb3",1,"A3",4,
+              "D4",2,"C4",2,"Bb3",2,"A3",2,"G3",2,"F3",2,"E3",4,
+              "F3",2,"G3",2,"A3",4,"A3",4],
+    bajo:    ["A1",8,"G2",4,"F2",4,"E2",8,"A1",8],
+  },
   seul: { // Corea del Sur: pentatónica de gayageum, que arranca lenta y se acelera
     tempo: 0.21, onda: "triangle",
     melodia: ["D4",4,"F4",2,"G4",2,"A4",4,"C5",2,"A4",2,

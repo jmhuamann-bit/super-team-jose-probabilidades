@@ -1,0 +1,41 @@
+{
+  "id": "level12",
+  "distrito": "España",
+  "clase": "Clase 03 · PC4",
+  "titulo": "El país de la Vuelta, donde importa en qué puesto llegas",
+  "tema": "giralda",
+  "musica": "giralda",
+  "vehiculo": "tranvia",
+  "intro": "Tercera clase de la PC4: un repasito de conceptos, casi sin cuentas. Toca España por la Vuelta: al final no importa tanto cuántos minutos hiciste, sino en qué puesto llegaste, y esa es justo la idea de Kruskal-Wallis. Hay cuatro pruebas y un orden. Primero se revisa si cada grupo es normal, con Jarque-Bera o con Kolmogorov-Smirnov. Si alguno no lo es, las varianzas se comparan con Levene y las medianas con Kruskal-Wallis. En casi todas, el Minitab ya te da el valor P: lo que te toca es saber qué prueba es, qué dice su hipótesis y cómo se concluye.",
+  "repaso": [
+    "EL ORDEN: primero la prueba de normalidad de cada grupo. Si alguno NO es normal, forzosamente se usa Levene para las varianzas y Kruskal-Wallis para las medianas. Basta con un solo grupo no normal.",
+    "JARQUE-BERA: verifica si la distribución se ajusta a una normal. Se invita sola cuando te dan la ASIMETRÍA y la CURTOSIS. Se suele hacer a mano y es menos precisa. En el fondo revisa que sea simétrica y mesocúrtica, y siempre tiene 2 grados de libertad.",
+    "KOLMOGOROV-SMIRNOV: también verifica normalidad, pero se usa con el reporte de Minitab, de preferencia en variables cuantitativas continuas no agrupadas. Es más precisa: si tienes los datos de las dos, se sugiere esta.",
+    "LAS HIPÓTESIS DE NORMALIDAD: Hp dice que la variable SÍ se ajusta a una normal; Ha, que NO. Un valor P grande es buena noticia para la normalidad.",
+    "LEVENE: compara las VARIANZAS de varios grupos a la vez, cuando hay datos no normales. Hp: todas las varianzas son iguales. Ha: al menos una es diferente.",
+    "KRUSKAL-WALLIS: compara las MEDIANAS de dos o más grupos, o se usa como aproximación para comparar promedios. La variable debe ser cuantitativa continua. Hp: la mediana es similar en los grupos. Ha: en al menos un grupo es diferente.",
+    "LOS RANGOS: en Kruskal-Wallis lo que importa NO son los valores, sino las POSICIONES. El dato más chico lleva la posición 1. Si dos empatan, cada uno lleva el promedio de sus posiciones.",
+    "LA REGLA UNIVERSAL DEL VALOR P: si P < α se RECHAZA la Hp; si P ≥ α se ACEPTA. Con α = 0,05.",
+    "EN LEVENE NO SE CALCULA NADA: el estadístico y la región crítica no se usan. Se lee el valor P del Minitab, igual que en Kolmogorov-Smirnov.",
+    "OJO CON «AL MENOS UNO»: si se rechaza en Levene o en Kruskal-Wallis, no quiere decir que todos sean distintos. Quiere decir que al menos uno es diferente.",
+    "EL CASO DE SAN BORJA: asimetría 2,18 y curtosis 6,55, lejos de cero: no es normal. Como los otros distritos sí lo eran, igual tocó Levene y Kruskal-Wallis para comparar los cuatro.",
+    "EL CASO DE CISNEY: el segmento C tuvo P = 0,038, no es normal. Levene dio 0,928 y Kruskal-Wallis 0,207: se aceptan las dos, varianzas y medianas similares."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                   AA                                                                                                               ",
+    "                      L                    V                                                                     G                                                                  ",
+    "                                                                 oo  oo                                                                                                             ",
+    "                                                                 ======                                                                                                             ",
+    "      ooLoo          oooo               oo                                      ooooooooooo                   oo          ooooo                     1   L    oooooooo               ",
+    "                    ======              ======                                                         ooooo  ======                 ooooo                  ==========              ",
+    "                                  oooo                         =====                                                                                                                ",
+    "  P           C             E                       E     C T               E     X   E X       C                   E       X              C  E                         B       M   ",
+    "###################################  ###################################################################   ###########################   ###########################################",
+    "###################################  ###################################################################   ###########################   ###########################################",
+    "###################################  ###################################################################   ###########################   ###########################################"
+  ]
+}
